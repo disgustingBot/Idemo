@@ -1,0 +1,344 @@
+/* Pagina desarrollada por Lattedev.com */
+
+
+
+
+:root {
+    /*VARIABLES DE PERSONALIZACION DE PAGINA*/
+    /* la idea de esto es que sean como controles con los
+    que hacer facilmente diferentes versiones de la pagina */
+
+
+    /* SIZES */
+    /* Al editar los tamaños, hacerlo siempre sin unidades
+    sabiendo que el numero corresponde a la cantidad de pixeles */
+    --size1a: 38; --size1b: 80; --size1c: 64; --size1d:128;
+    --size2a: 33; --size2b: 63; --size2c: 53; --size2d:100;
+    --size3a: 29; --size3b: 50; --size3c: 40; --size3d: 56;
+    --size4a: 24; --size4b: 34; --size4c: 23; --size4d: 35;
+    --size5a: 14; --size5b: 18; --size5c: 18; --size5d: 23;
+    --size6a: 14; --size6b: 16; --size6c: 14; --size6d: 19;
+    --size7a: 12; --size7b: 14; --size7c: 12; --size7d: 18;
+    --size8a: 10; --size8b: 12; --size8c: 10; --size8d: 15;
+    /* COLORS */
+    /* Al editar colores siempre usar HEX y nunca
+    dejar espacio entre los dos puntos y el color */
+    --color1:#463223;
+    --color2:#E1AA00;
+    --color3:#FAC30A;
+    --color4:#EBE1C8;
+    --color5:#F5F0DC;
+    --color6:#FFFAE6;
+
+
+    --size1: calc(var(--size1a) * 1px);
+    --size2: calc(var(--size2a) * 1px);
+    --size3: calc(var(--size3a) * 1px);
+    --size4: calc(var(--size4a) * 1px);
+    --size5: calc(var(--size5a) * 1px);
+    --size6: calc(var(--size6a) * 1px);
+    --size7: calc(var(--size7a) * 1px);
+    --size8: calc(var(--size8a) * 1px);
+
+
+
+    /*VARIABLES DE CAMBIO VISUAL RELACIONADO A AL ANCHO DE LA PANTALLA*/
+    --vhMax:calc(100vh - 50px);
+    --mainCol: 1/13;
+    --mainTop: 50px;
+    --oneColumnOfMain: 8.75%;
+    --hamDisplay: flex;
+    --asideCol:   none;
+    --asidePos:  fixed;
+    --asidePos2:  fixed;
+    --asideLeft:  -60%;
+    --asideWidth:  200px;
+    --footerDisplay: none;
+    --onlyMobile: flex;
+
+    --sizeNBa:18; --sizeNBb:20; --sizeNBc:12; --sizeNBd:20;
+    --sizeNB:calc(var(--sizeNBa) *1px);
+    --m10d20: 10;
+}
+
+
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media     screen and (min-width: 360px)  {
+  :root {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - 400px) / (1024 - 400))); */
+  --size1: calc(calc(var(--size1a) * 1px) + (var(--size1b) - var(--size1a)) * ((100vw - 360px) / (768 - 360)));
+  --size2: calc(calc(var(--size2a) * 1px) + (var(--size2b) - var(--size2a)) * ((100vw - 360px) / (768 - 360)));
+  --size3: calc(calc(var(--size3a) * 1px) + (var(--size3b) - var(--size3a)) * ((100vw - 360px) / (768 - 360)));
+  --size4: calc(calc(var(--size4a) * 1px) + (var(--size4b) - var(--size4a)) * ((100vw - 360px) / (768 - 360)));
+  --size5: calc(calc(var(--size5a) * 1px) + (var(--size5b) - var(--size5a)) * ((100vw - 360px) / (768 - 360)));
+  --size6: calc(calc(var(--size6a) * 1px) + (var(--size6b) - var(--size6a)) * ((100vw - 360px) / (768 - 360)));
+  --size7: calc(calc(var(--size7a) * 1px) + (var(--size7b) - var(--size7a)) * ((100vw - 360px) / (768 - 360)));
+  --size8: calc(calc(var(--size8a) * 1px) + (var(--size8b) - var(--size8a)) * ((100vw - 360px) / (768 - 360)));
+
+  --sizeNB: calc(calc(var(--sizeNBa) * 1px) + (var(--sizeNBb) - var(--sizeNBa)) * ((100vw - 360px) / (768 - 360)));
+}}
+
+@media screen and (min-width: 576px) {:root {}}
+@media screen and (min-width: 768px) {
+    :root {
+      --size1: calc(calc(var(--size1c) * 1px) + (var(--size1d) - var(--size1c)) * ((100vw - 768px) / (1200 - 768)));
+      --size2: calc(calc(var(--size2c) * 1px) + (var(--size2d) - var(--size2c)) * ((100vw - 768px) / (1200 - 768)));
+      --size3: calc(calc(var(--size3c) * 1px) + (var(--size3d) - var(--size3c)) * ((100vw - 768px) / (1200 - 768)));
+      --size4: calc(calc(var(--size4c) * 1px) + (var(--size4d) - var(--size4c)) * ((100vw - 768px) / (1200 - 768)));
+      --size5: calc(calc(var(--size5c) * 1px) + (var(--size5d) - var(--size5c)) * ((100vw - 768px) / (1200 - 768)));
+      --size6: calc(calc(var(--size6c) * 1px) + (var(--size6d) - var(--size6c)) * ((100vw - 768px) / (1200 - 768)));
+      --size7: calc(calc(var(--size7c) * 1px) + (var(--size7d) - var(--size7c)) * ((100vw - 768px) / (1200 - 768)));
+      --size8: calc(calc(var(--size8c) * 1px) + (var(--size8d) - var(--size8c)) * ((100vw - 768px) / (1200 - 768)));
+
+
+      --sizeNB: calc(calc(var(--sizeNBc) * 1px) + (var(--sizeNBd) - var(--sizeNBc)) * ((100vw - 768px) / (1200 - 768)));
+
+      --vhMax:100vh;
+      --mainCol: 3/13;
+      --mainTop: 0;
+      --oneColumnOfMain: 10%;
+      --hamDisplay: none;
+      --asideCol:    1/3;
+      --asidePos: sticky;
+      --asideLeft:     0;
+      --asideWidth: 100%;
+      --footerDisplay: flex;
+      --onlyMobile: none;
+      --m10d20: 20;
+
+
+
+
+
+
+
+    }
+
+    /* aside {
+      position:    fixed;
+    } */
+    @media not all and (min-resolution:.001dpcm) {
+      @media {
+        :root {
+          --asidePos: -webkit-sticky;
+        }
+      }
+    }
+}@media screen and (min-width:  992px) {:root {}}
+@media  screen and (min-width: 1200px) {
+    :root {
+      --size1: calc(var(--size1d) * 1px);
+      --size2: calc(var(--size2d) * 1px);
+      --size3: calc(var(--size3d) * 1px);
+      --size4: calc(var(--size4d) * 1px);
+      --size5: calc(var(--size5d) * 1px);
+      --size6: calc(var(--size6d) * 1px);
+      --size7: calc(var(--size7d) * 1px);
+      --size8: calc(var(--size8d) * 1px);
+
+      --sizeNB: calc(var(--sizeNBd) * 1px);
+    }
+}
+
+
+/* ----------------------------------------- LOGIC FOLD/ ----------------------------------------- */
+/* -------------------------------------------- FONTS -------------------------------------------- */
+@font-face {font-family:Futura;src:url('../fnt/Futura.woff');}
+/* ------------------------------------------- GENERAL ------------------------------------------- */
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-family: Futura;
+  text-align: center;
+  color:var(--color1);
+  overflow-x:hidden;
+  /* will-change:transform; */
+}
+body,figure,ul,ol,h1,h2,h3,h4,h5,h6,p {margin:0}
+ul, ol {padding:0;list-style-type: none;}
+a {text-decoration: none; color:var(--color1);}
+form {
+  display: grid;
+  gap: 10px;
+  grid-gap:10px;
+  grid-auto-rows: minmax(30px, auto);
+  margin-bottom:auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+input {
+  height: 35px;
+  border: none;
+  background: var(--color6);
+  border-radius: 12px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  transition: .3s;
+  line-height: 16px;
+}
+:focus  {outline:0}
+input:focus, textarea {outline:none!important; border-bottom: 2px solid var(--color1);}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color1);
+  opacity: 1; /* Firefox */
+  font-family: Futura;
+  font-size: 1.2em;
+}
+button {
+  background: var(--color4);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  border-radius: 8px;
+  padding: 3px 7px;
+  font-family: Futura;
+  font-size: .8em;
+  font-weight: bold;
+  cursor: pointer;
+  transition:.25s;
+}
+button:hover {
+  background: var(--color1);
+  color: var(--color5);
+}
+main {
+  grid-column:var(--mainCol);
+  display: grid;
+  margin-top:var(--mainTop)!important;
+}
+/* ------------------------------- ASIDE: HEADER, NAV-BAR and FOOTER ------------------------------- */
+.hamburgerButton svg{width:100%;height:100%;}
+.hamburgerButton {
+  border:none;
+  background: none;
+  width:  45px;
+  height: 45px;
+  display: var(--onlyMobile);
+  z-index: 9;
+  position: fixed;
+  margin: 5px;
+  top: 0;
+}
+#hamburgerButton1 {left: 0}
+#hamburgerButton2 {right:0}
+aside {
+  background:  var(--color5);
+  grid-column: var(--asideCol);
+  /* position:    fixed; */
+  /* position:    var(--asidePos2); */
+  position:    var(--asidePos);
+  /* position:    fixed; */
+  /* position: -webkit-sticky; */
+  width:       var(--asideWidth);
+  top: 0;
+  min-height: 100vh;
+  z-index: 10;
+  margin-bottom: auto;
+  transition: .6s;
+}
+#aside1 {left:var(--asideLeft);}
+/* TODO: hacer que esto funcione en todos los navegadores */
+aside::-webkit-scrollbar {display: none}
+#hamburgerButton1:hover + #aside1, #aside1:hover {left: 0}
+#hamburgerButton2:hover + #aside2, #aside2:hover {right:0}
+/* FOOTER MOBILE */
+#aside2 {
+  position: fixed;
+  display: var(--onlyMobile);
+  top:0;
+  right:-200px;
+  z-index: 10;
+}
+#aside2 footer{
+  height: 100%;
+  margin-top: auto;
+}
+
+
+/* HEADER */
+#logo {
+  padding: 25% 27% 15% 27%!important;
+  display: flex;
+  margin: 0;
+}
+#iso {
+  width: 100%!important;
+  height: auto!important;
+}
+
+
+/* NAV-BAR */
+#navBar li {
+  margin: 25px 0;
+  font-size: var(--sizeNB);
+  box-sizing: border-box;
+}
+#navBar li a {
+  padding: 10px 20px;
+  transition: .4s;
+}
+#navBar li a:hover {
+  border: 2px solid var(--color1);
+  border-radius: 15px;
+}
+
+
+/* FOOTER */
+#aside1 footer {display: var(--footerDisplay);}
+footer {
+  margin-top: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#socialMedia {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+  gap: 3%;
+  width: 100%;
+  padding: 0 15%;
+  box-sizing: border-box;
+}
+
+#socialMedia svg {width:100%;height:auto;fill:var(--color1);transition:.3s;border-radius: 50%;}
+#socialMedia svg:hover {fill:var(--color5);background:var(--color1);}
+
+#address    {font-size: calc(var(--sizeNB) * .7);}
+#address h4 {font-size:calc(var(--sizeNB) * .9);}
+#address li {margin: 15px 0;}
+
+#fromSpain {
+  background: var(--color4);
+  color: var(--color1);
+  border: 2px solid var(--color1);
+  border-radius: 8px;
+  padding: 3px 7px;
+  font-family: Futura;
+  font-size: .8em;
+  font-weight: bold;
+  width: 80%;
+  margin:0 auto;
+}
+
+
+#mobileHeader {
+  position: fixed;
+  display: var(--onlyMobile);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 52px;
+  background: var(--color5);
+}
+
+#isotype {
+  margin: auto;
+  width: 50px;
+  height: auto;
+}

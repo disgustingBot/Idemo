@@ -1,0 +1,589 @@
+:root {
+    /*VARIABLES DE PERSONALIZACION DE PAGINA*/
+    /* la idea de esto es que sean como controles con los
+    que hacer facilmente diferentes versiones de la pagina */
+
+    /*VARIABLES DE CAMBIO VISUAL RELACIONADO A AL ANCHO DE LA PANTALLA*/
+    --GTC1to3:1fr;
+    /* --domoticaSistemaGTC: 1fr; */
+    /* --domoticaSistemaGTC: repeat(10, 1fr); */
+    --domoticaSistemaH3GC: 1/1;
+    --domoticaSistemaGCG: 0;
+
+    --domoticaAppStoreImgWidth: 33%;
+
+    --CyDLastGridGTC: repeat(2, 1fr);
+
+    --hubUl3Padding: 5%;
+
+    --domoticaHubUL1Li1GC: 1 / span 3;
+    --domoticaHubUL1Li2GC: 6 / span 3;
+    --domoticaHubUL1Li3GC: 1 / span 3;
+    --domoticaHubUL1Li4GC: 6 / span 3;
+    --domoticaHubUl3GTC: repeat(2, 1fr);
+    --domoticaCyDULGTC: 1fr;
+
+    --a5Left:-2%;
+    --aCuadraditoMinWidth: 180px;
+
+    --domoticaCompatibilitiesGTC: 1fr;
+
+    --domoticaCyDBackgroundHubDisplay: none;
+}
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (min-width: 576px) {
+    :root {
+      --aCuadraditoMinWidth: 220px;
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+      --GTC1to3:repeat(3, 1fr);
+      /* --domoticaSistemaGTC: repeat(3, 1fr); */
+      --domoticaSistemaH3GC: 1/4;
+      --domoticaSistemaGCG: 12.5%;
+
+      --domoticaAppStoreImgWidth: 15%;
+
+      --domoticaCyDULGTC: 1fr 1fr;
+      --domoticaHubUL1Li1GC: 3 / span 2;
+      --domoticaHubUL1Li2GC: 7 / span 2;
+      --domoticaHubUL1Li3GC: 1 / span 2;
+      --domoticaHubUL1Li4GC: 7 / span 2;
+      --domoticaHubUl3GTC: repeat(4, 1fr);
+
+      --a5Left:-4%;
+      --aCuadraditoMinWidth: 120px;
+
+      --domoticaCompatibilitiesGTC: 1fr 1fr 1fr;
+
+      --domoticaCyDBackgroundHubDisplay: flex;
+    }
+}
+@media screen and (min-width: 992px) {
+    :root {
+      --CyDLastGridGTC: repeat(4, 1fr);
+      --hubUl3Padding: 10%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root {
+    }
+}
+/* ----------------------------------------- LOGIC FOLD/ ----------------------------------------- */
+
+
+
+
+
+#navBar li:nth-child(4) a{border:2px solid var(--color1);border-radius:15px;}
+
+main {
+  grid-auto-rows: auto;
+}
+
+
+
+/* ABOVE THE FOLD */
+#domoticaATF {
+  display: grid;
+  grid-template-rows: 200px auto;
+  height: 800px;
+  position: relative;
+  color: var(--color4);
+  /* font-size: 3em; */
+}
+#domoticaATF h1 {
+  color:     var(--color3);
+  font-size: var(--size2);
+  margin: auto 0 30px 0;
+  /* font-size: 7em; */
+}
+#domoticaATF h1 sup {
+  font-size: .2em;
+  line-height: 40px;
+}
+#domoticaATF h2 {
+  letter-spacing: 6px;
+  font-size: calc(var(--size4) + 4px);
+  /* font-size: 4em; */
+  margin-top: 0;
+  margin-bottom: auto;
+}
+#domoticaATF img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+:root {
+    /*VARIABLES DE CAMBIO VISUAL RELACIONADO A AL ANCHO DE LA PANTALLA*/
+    --titleUlSize: 170;
+}
+/* VALORES */
+#domoticaSistema {
+  display: grid;
+  grid-template-columns: var(--GTC1to3);
+  grid-column-gap: var(--domoticaSistemaGCG);
+  padding: 0 var(--oneColumnOfMain);
+  grid-template-rows: calc(var(--titleUlSize) * 1px) auto;
+  background: var(--color1);
+  color: var(--color6);
+}
+#domoticaSistema li {margin-bottom: 50px}
+#domoticaSistema h3 {
+  grid-column: var(--domoticaSistemaH3GC);
+  /* --domoticaSistemaH3GC: 1/4; */
+  font-size:var(--size3);
+  /* font-size:2.9em; */
+  letter-spacing: 4px;
+  line-height: calc(var(--titleUlSize) * 1px);
+}
+#domoticaSistema img {
+  width: 50%;
+  height: auto;
+  max-width: 150px;
+}
+#domoticaSistema h4 {
+  font-size:calc(var(--size4) - 4px);
+  letter-spacing: 2px;
+  font-weight: 100;
+  /* font-size:2.2em; */
+  margin: 10px 0;
+}
+#domoticaSistema h5 {
+  /* font-size:1.2em; */
+  font-size:var(--size7);
+  color:var(--color3);
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+#domoticaSistema p {
+  font-size:var(--size7);
+  font-weight: 100;
+  /* font-size:1.1em; */
+}
+#domoticaSistema p a {
+  font-size:.8em;
+}
+
+
+
+/* APP */
+#domoticaApp {
+  display: grid;
+  background: var(--color1);
+  color: var(--color6);
+}
+#domoticaApp div {
+  /* grid-column: 1/4; */
+}
+#domoticaApp div h3{
+  font-size: var(--size4);
+  /* font-size: 3em; */
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#domoticaApp ul {
+  display: grid;
+  /* grid-template-columns: 2fr 2fr 2fr; */
+  grid-template-columns: var(--GTC1to3);
+  /* grid-column-gap: 12.5%; */
+  grid-column-gap: var(--domoticaSistemaGCG);
+  padding: 0 10%;
+  grid-template-rows: 480px;
+  grid-auto-rows: 520px;
+}
+#domoticaApp ul img {
+  width: 87%;
+  max-width: 200px;
+  margin: auto;
+  height: auto;
+}
+#domoticaApp p {
+  letter-spacing: 1px;
+  font-size: var(--size7);
+  /* font-size: 1.1em; */
+  line-height: 1.3em;
+}
+#domoticaApp div h4{
+  font-size: var(--size4);
+  /* font-size: 2.8em; */
+  letter-spacing: 3px;
+}
+.domoticaAppStoreImg {}
+.domoticaAppStoreImg img {
+  width: var(--domoticaAppStoreImgWidth);
+  min-width: 50px!important;
+  margin: 20px 10px 100px 10px;
+}
+
+
+
+/* HUB */
+#domoticaHub {
+  display: grid;
+  background: var(--color1);
+  color: var(--color6);
+  position: relative;
+  z-index: 0;
+}
+#domoticaHub h3 {
+  font-size: calc(var(--size4) + 4px);
+  /* font-size: 2.7em; */
+  letter-spacing: 6px;
+  margin-top: 30px;
+}
+#domoticaHub h4 {
+  font-size: calc(var(--size4) + 4px);
+  letter-spacing: 6px;
+  font-weight: 100;
+  color: var(--color3);
+  padding: 0 15%;
+}
+#domoticaHub h4 sup {
+  font-size: .3em;
+}
+
+#domoticaHubUl1 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 150px 18vw 200px;
+  padding: 20px 10%;
+  letter-spacing: 1px;
+  font-size: var(--size7);
+}
+#domoticaHubUl1 .cuadradito {
+  height: 12vw;
+}
+#b1 {bottom:-40px;right:-30px;}#b1 .cuadradito {min-height: 100px; max-height: 150px;}
+#b2 {bottom:-40px;left: -30px;}#b2 .cuadradito {min-height: 100px; max-height: 150px;}
+#b3 {top:    -5vw;right:-30px;}#b3 .cuadradito {min-height: 100px; max-height: 150px;}
+#b4 {top:    -5vw;left: -30px;}#b4 .cuadradito {min-height: 100px; max-height: 150px;}
+#domoticaHubUl1 li {position: relative;z-index: 1;}
+#domoticaHubUl1 li:nth-child(1) {grid-column: var(--domoticaHubUL1Li1GC);text-align: right;}
+#domoticaHubUl1 li:nth-child(2) {grid-column: var(--domoticaHubUL1Li2GC);text-align: left ;}
+#domoticaHubUl1 li:nth-child(3) {grid-column: var(--domoticaHubUL1Li3GC);text-align: right;grid-row: 3;}
+#domoticaHubUl1 li:nth-child(4) {grid-column: var(--domoticaHubUL1Li4GC);text-align: left ;grid-row: 3;}
+#domoticaHubUl1 h5 {
+  font-size: var(--size6);
+}
+#domoticaHubUl1 p {
+  color: var(--color3);
+}
+#domoticaHubUl1 img {
+  grid-column: 1 / span 8;
+  position: relative;
+  z-index: 0;
+  grid-row: 2;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+#domoticaHubUl2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-bottom: 100px;
+}
+
+#domoticaHubUl2 h5 {
+  font-size: var(--size4);
+  /* font-size: 2.7em; */
+}
+#domoticaHubUl2 p {
+  font-size: var(--size7);
+  /* font-size: 1.1em; */
+  color: var(--color3);
+  letter-spacing: 1px;
+}
+#domoticaHubArticle2 figure {position: relative;}
+#domoticaHubArticle2 img {
+  width: 60%;
+  margin-top: 20px;
+}
+#domoticaHubArticle2 .zigbeeIso {
+  margin:  0;
+  bottom: 8%;
+  left:  30%;
+  width: 15%!important;
+}
+#domoticaHubUl3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--domoticaHubUl3GTC);
+  -ms-grid: ;
+  grid: ;-gap: 10px;
+  padding: 0 var(--hubUl3Padding);
+  padding-bottom: 80px;
+  text-align: left;
+  /* font-size: 1.2em; */
+}
+#domoticaHubUl3 h5 {
+  font-size: var(--size6);
+  /* font-size: 1em; */
+  letter-spacing: 3px;
+}
+#domoticaHubUl3 p {
+  color: var(--color3);
+  font-size: var(--size7);
+  letter-spacing: 2px;
+}
+
+
+/* COMPATIBILIDAD Y DISPOSITIVOS */
+#domoticaCyD {
+  display: grid;
+  background: var(--color1);
+  color: var(--color6);
+  position: relative;
+}
+
+
+:root {
+  --posx:100%;
+  --posy:40%;
+  --size:2.3;
+}
+.arrow {
+  display: grid;
+  position: absolute;
+  z-index: 1;
+  transform-origin: center 6%;
+}
+.circulito {
+  height: calc(var(--size) * 1vw);
+  width:  calc(var(--size) * 1vw);
+  border-radius: 50%;
+  background: var(--color2);
+}
+.cuadradito {
+  height: 11vw;
+  width:  calc(var(--size) * .20vw);
+  background: var(--color2);
+  margin: auto;
+}
+#a1 {transform: rotate( -30deg);right:var(--a5Left);top:var(--posy);}#a1 .cuadradito{min-height: var(--aCuadraditoMinWidth);}
+#a2 {transform: rotate( -55deg);right:var(--a5Left);top:var(--posy);}#a2 .cuadradito{max-height: 100px;}
+#a3 {transform: rotate(-122deg);right:var(--a5Left);top:var(--posy);}#a3 .cuadradito{max-height: 100px;}
+#a4 {transform: rotate(-150deg);right:var(--a5Left);top:var(--posy);}#a4 .cuadradito{min-height: var(--aCuadraditoMinWidth);}
+#a5 {transform: rotate(  30deg);left :var(--a5Left);top:var(--posy);}#a5 .cuadradito{min-height: var(--aCuadraditoMinWidth);}
+#a6 {transform: rotate(  55deg);left :var(--a5Left);top:var(--posy);}#a6 .cuadradito{max-height: 100px;}
+#a7 {transform: rotate( 122deg);left :var(--a5Left);top:var(--posy);}#a7 .cuadradito{max-height: 100px;}
+#a8 {transform: rotate( 150deg);left :var(--a5Left);top:var(--posy);}#a8 .cuadradito{min-height: var(--aCuadraditoMinWidth);}
+#domoticaCyDBackgroundHub {
+  display: var(--domoticaCyDBackgroundHubDisplay);
+  position: absolute;
+  top: 720px;
+  left: 50%;
+  z-index: 0;
+  transform-origin: center;
+  transform: translateX(-50%);
+  width: 40%;
+  height: auto;
+}
+
+#domoticaCyD div h3 {
+  /* font-size: var(--size3); */
+  font-size: calc(var(--size4) + 4px);
+  /* font-size: 3em; */
+  letter-spacing: 6px;
+}
+#domoticaCyD > ul:nth-child(2) {
+  display: grid;
+  grid-template-columns: var(--domoticaCyDULGTC);
+  /* grid-template-columns: 1fr 1fr; */
+  width: 100%;
+}
+#domoticaCyD > ul img {width: 100%;}
+#domoticaCyD > ul h4 {
+  font-size: var(--size4);
+  /* font-size: 2.5em; */
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: var(--color3);
+  margin-top:20px;
+}
+.domoticaCyDSpecialP {
+  font-size: var(--size7);
+  /* font-size: 1.15em; */
+  letter-spacing: 1px;
+  padding: 0 20px;
+  height: 100px;
+}
+.domoticaHubSubGrill {
+  display: grid;
+  color: var(--color3);
+  grid-row-gap: 20px;
+  position: relative;
+  margin-top:50px;
+}
+.domoticaHubSubGrill li {display: grid;grid-gap: 5%;}
+#domoticaIDRM {margin-right:40%;}
+#domoticaTERR {margin-left: 40%;}
+#domoticaIDRM li {position:relative;grid-template-columns: 2fr 1fr;text-align: right;}
+#domoticaTERR li {position:relative;grid-template-columns: 1fr 2fr;text-align: left;}
+
+.domoticaHubSubGrill p {
+  box-sizing: border-box;
+  margin: auto;
+  /* padding: 0 20px; */
+  width: 100%;
+  font-size: var(--size5);
+  /* font-size: 1.4em; */
+}
+.domoticaHubSGIMG {
+  position: absolute;
+  z-index: 2;
+  width: 33.33%!important;
+  top: 39%;
+}
+#domoticaHubSGIMG1 {right: 115%;}
+#domoticaHubSGIMG2 {left:  115%;}
+
+#domoticaCompatibilities {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: var(--domoticaCompatibilitiesGTC);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  padding: 0 10%;
+}
+
+#domoticaCompatibilities img {height: 80px;width: auto!important;}
+
+#domoticaCompatibilities h5 {
+  font-size: var(--size4);
+  font-weight: 100;
+  /* font-size: 2.5em; */
+  color: var(--color3);
+  letter-spacing: 3px;
+}
+#domoticaCompatibilities p {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+#domoticaCyDFigZigbee {
+  position: relative;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10%;
+}
+#domoticaCyDFigZigbee .zigbeeIso {
+  right: -50%;
+  top:-5%;
+  margin-left: auto;
+  left: none;
+  width: 20%!important;
+}
+#domoticaCyDFigZigbee h4 {
+  font-size: 2.5em;
+  color: var(--color3);
+  letter-spacing: 3px;
+}
+#domoticaCyDFigZigbee p {
+  font-size: var(--size7);
+  letter-spacing: 1px;
+  padding: 0 5%;
+}
+#domoticaCyDFigZigbee img {
+  margin: auto;
+  width: 100%;
+}
+
+
+
+
+
+
+#domoticaCyDLastGrid {
+  display: grid;
+  grid-template-columns: var(--CyDLastGridGTC);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  padding: 0 var(--oneColumnOfMain);
+}
+#domoticaCyDLastGrid li {
+  position: relative;
+  display: grid;
+  grid-template-rows: 180px auto auto auto auto;
+}
+#domoticaCyDLastGrid img {
+  max-height: 180px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  margin-top: auto;
+}
+#domoticaCyDLastGrid h5 {
+  font-size: var(--size5);
+  /* font-size: 1.6em; */
+  color: var(--color3);
+  letter-spacing: 1px;
+}
+#domoticaCyDLastGrid p {
+  font-size: var(--size8);
+  /* font-size: .8em; */
+  letter-spacing: 1px;
+}
+#domoticaCyDLastGrid a {
+  color: var(--color3);
+  border: 2px solid var(--color3);
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: var(--size8);
+  /* font-size: .9em; */
+  margin: auto;
+}
+#domoticaCyDLastGrid .zigbeeIso:nth-child(2) {left: 37%;}
+.zigbeeIso {
+  position: absolute;
+  width:25%!important;
+  height: auto;
+  left: 10%;
+  /* top: 10%; */
+}
+
+#domoticaCyDCompati {
+  height: var(--vhMax);
+  padding: 0 10%;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#domoticaCyDCompati h4 {
+    font-size: 2.5em;
+    color: var(--color3);
+    letter-spacing: 3px;
+}
+#domoticaCyDCompati p {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.domoticaCyDCompImg {margin: 5px 10px;}
+#domoticaCyDCompImg1  {width: 13%;}
+#domoticaCyDCompImg2  {width:  8%;}
+#domoticaCyDCompImg3  {width:  4%;}
+#domoticaCyDCompImg4  {width: 15%;}
+#domoticaCyDCompImg5  {width: 15%;}
+#domoticaCyDCompImg6  {width: 15%;}
+#domoticaCyDCompImg7  {width: 15%;}
+#domoticaCyDCompImg8  {width: 10%;}
+#domoticaCyDCompImg9  {width: 19%;}
+#domoticaCyDCompImg10 {width: 13%;}
+#domoticaCyDCompImg11 {width: 10%;}

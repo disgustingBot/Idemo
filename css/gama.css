@@ -1,0 +1,424 @@
+:root {
+    /*VARIABLES DE PERSONALIZACION DE PAGINA*/
+    /* la idea de esto es que sean como controles con los
+    que hacer facilmente diferentes versiones de la pagina */
+
+    /*VARIABLES DE CAMBIO VISUAL RELACIONADO A AL ANCHO DE LA PANTALLA*/
+    --navgtGTC: 1fr;
+    --navgtTitleGC:1/2;
+
+    --motoresNavgtGTC:repeat(2,1fr);
+    --motoresNavgtTitleGC:1/3;
+        --motoresNavgt3FigureGTR: 1fr 1fr;
+        --motoresNavgt3imgHeight: auto;
+        --motoresNavgt3imgWidth: 150%;
+    --motoresNavgt3imgGC: span 10;
+    --motoresNavgt3img2ndGC: var(--motoresNavgt3imgGC);
+    --motoresNavgt3figcaptionGR: 2;
+    --motoresNavgt3figcaptionGC:span 10;
+
+    --paddingFichas: 0;
+    --paddingSections: 30px;
+
+    --circulitoWidth:30%;
+    --motorMT: 20px;
+    --motorWidth: 80%;
+    --tablaPaddingX: 2%;
+    --tablaPaddingY: 20px;
+    --cDistance:2%;
+    --descargaGTC:1fr;
+    --descargaGTR:1fr 1fr;
+}
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (min-width: 576px) {
+    :root {
+      --paddingSections: 40px;
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+
+      --navgtGTC: 1fr 1fr;
+      --navgtTitleGC:1/3;
+
+      --motoresNavgtGTC:repeat(5,1fr);
+      --motoresNavgtTitleGC:1/6;
+            --motoresNavgt3FigureGTR: auto;
+            --motoresNavgt3imgHeight: 100%;
+            --motoresNavgt3imgWidth: 100%;
+      --motoresNavgt3imgGC: span 6;
+      --motoresNavgt3img2ndGC: 5/span 6;
+      --motoresNavgt3figcaptionGR:1;
+      --motoresNavgt3figcaptionGC:span 4;
+
+      --circulitoWidth:20%;
+      --motorMT: 50px;
+      --motorWidth: 54%;
+      --tablaPaddingX: 10%;
+      --cDistance:10%;
+      --descargaGTC:6fr 4fr;
+      --descargaGTR:1fr;
+    }
+}
+@media screen and (min-width: 992px) {
+    :root {
+      --paddingSections: 90px;
+      --paddingFichas: 5%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    :root {
+      --tablaPaddingY: 50px;
+
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    :root {
+      --tablaPaddingY: 140px;
+
+    }
+}
+
+
+
+/* ----------------------------------------- LOGIC FOLD/ ----------------------------------------- */
+#navBar li:nth-child(1) a{border:2px solid var(--color1);border-radius:15px;}
+
+
+
+/* ABOVE THE FOLD */
+#aboveTheFold {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  height: var(--vhMax);
+}
+
+#aboveTheFold img {
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#aboveTheFold figcaption {
+  margin: auto;
+  color: var(--color1);
+  font-size: var(--size5);
+  letter-spacing: 2px;
+}
+#aboveTheFold figcaption h4 {
+  font-size: var(--size1);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#titleUse {
+  font-size: var(--size4);
+  padding: 30px 0;
+}
+
+
+
+
+/* MODELS */
+#models {
+  display: grid;
+  background: var(--color4);
+  padding: 50px 0;
+  grid-row-gap: 50px;
+  position: relative;
+  z-index: 0;
+}
+#models li {position: relative}
+#models h4 {
+  font-size: var(--size2);
+}
+#models p:nth-child(2) {
+  font-size: var(--size6);
+  letter-spacing: 1px;
+  font-weight: 900;
+  padding: 0 33.5%;
+  position: relative;
+  z-index: 2;
+}
+#models img:nth-child(3) {
+  margin-top:var(--motorMT);
+  width: var(--motorWidth);
+  position: relative;
+  z-index: 2;
+}
+
+}
+
+
+
+#atomCentral {width: calc(var(--motorWidth) - 10%)!important;}
+.shadow {width: 54%}
+.circulito {
+  position: absolute;
+  z-index: 1;
+  width: var(--circulitoWidth);
+  height: auto;
+  top: 12%;
+}
+.c1 {left:  var(--cDistance)}
+.c2 {right: var(--cDistance)}
+tabla {
+  display: grid;
+  grid-template-columns: 2fr repeat(6, 1fr);
+  grid-row-gap: 10px;
+  padding: 20px var(--tablaPaddingX);
+  padding-top: var(--tablaPaddingY);
+  text-align: left;
+}
+tabla p {
+  font-size: var(--size8);
+}
+tabla h6 {
+  font-size: var(--size8);
+  font-weight: 900;
+}
+
+
+
+
+
+.fichasTecnicas {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--color4);
+  padding: var(--paddingSections) var(--paddingFichas);
+}
+#fichasIcon {
+  width: 55px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#fichasTitle {
+  font-size: var(--size4);
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#fichasP {
+  font-size: var(--size5);
+}
+
+
+
+/* NAVIGATION */
+#navgt {
+  display: grid;
+  grid-template-columns: var(--navgtGTC);
+  grid-template-rows: 110px;
+  grid-auto-rows: 270px;
+  position: relative;
+  overflow: hidden;
+}
+#navgt h3 {
+  grid-column: var(--navgtTitleGC);
+    background: var(--color6);
+    line-height: 110px;
+    font-size: var(--size5);
+    letter-spacing: 2px;
+}
+#navgt li {
+  overflow: hidden;
+  position: relative;
+}
+
+#navgt a::after {
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .3s ease-in;
+}
+#navgt a:hover::after {transform: scaleY(1);}
+#navgt figure {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+#navgt li img {
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#navgt figcaption {
+  margin: auto;
+  color: var(--color1);
+  font-size: var(--size5);
+}
+#navgt figcaption h4 {
+  font-size: var(--size2);
+}
+
+
+
+
+/* NAVIGATION */
+#motoresNavgt {
+  display: grid;
+  grid-template-columns: var(--motoresNavgtGTC);
+  grid-template-rows: 110px 450px;
+  grid-auto-rows: 450px;
+  background: var(--color4);
+  overflow: hidden;
+}
+#motoresNavgt h3 {
+  margin: auto;
+  grid-column: var(--motoresNavgtTitleGC);
+}
+#motoresNavgt li {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+#motoresNavgt li::after {
+  content:"";
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  top:55%;
+  left: 0;
+  background: var(--color3);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .3s ease-in;
+}
+#motoresNavgt li:hover::after{transform:scaleY(1)}
+#motoresNavgt a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: var(--color1);
+}
+#motoresNavgt figure {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 55% 45%;
+  overflow: hidden;
+}
+#motoresNavgt img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#motoresNavgt figcaption {
+  margin: auto 0;
+  font-size: var(--size5);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+
+
+
+/* NAVIGATION 3 */
+#motoresNavgt3 {
+  display: grid;
+  grid-template-rows: 110px;
+  grid-auto-rows: var(--vhMax);
+  position: relative;
+  overflow: hidden;
+}
+#motoresNavgt3 figure {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: var(--motoresNavgt3FigureGTR);
+  /* grid-auto-rows: auto; */
+  overflow: hidden;
+  height: 100%;
+}
+#motoresNavgt3 img {
+  grid-row: 1;
+  grid-column: var(--motoresNavgt3imgGC);
+  /* height: 100%; */
+  height: var(--motoresNavgt3imgHeight);
+  min-height: 320px;
+  /* width: 100%; */
+  width: var(--motoresNavgt3imgWidth);
+  object-fit: cover;
+}
+#motoresNavgt3 li:nth-child(3) img {grid-column:var(--motoresNavgt3img2ndGC)}
+#motoresNavgt3 figcaption {
+  grid-row:    var(--motoresNavgt3figcaptionGR);
+  grid-column: var(--motoresNavgt3figcaptionGC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: min-content;
+  padding:20px;
+  box-sizing: border-box;
+  background: var(--color4);
+}
+#motoresNavgt3 p {font-size:calc(var(--size3) - 8px)}
+#motoresNavgt3 h3 {margin: auto;}
+#motoresNavgt3 a {
+  font-size: var(--size8);
+  border: 2px solid var(--color1);
+  border-radius: 12px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 0;
+  transition: .3s;
+}
+#motoresNavgt3 a:hover {
+  background: var(--color1);
+  color:var(--color5);
+}
+
+
+
+
+
+/* DESCARGA */
+#descarga {
+  display: grid;
+  /* grid-template-columns: 6fr 4fr; */
+  grid-template-columns: var(--descargaGTC);
+  grid-template-rows:    var(--descargaGTR);
+  height: var(--vhMax);
+  min-height: 350px;
+}
+#descarga img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#descarga figcaption {
+  width: 100%;
+  height: 100%;
+  background: var(--color2);
+}
+#descarga a {width: 100%;height: 100%;display: grid;}
+#descarga a img {width: 50px;height: auto;margin: auto;margin-top:10px;}
+#descarga p {
+  margin: auto;
+  margin-bottom: 0;
+  font-size: 3em;
+}

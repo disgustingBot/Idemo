@@ -1,0 +1,78 @@
+#navBar li:nth-child(7) a{border:2px solid var(--color1);border-radius:15px;}
+
+
+:root {
+  --mainGridC: 1fr;
+}
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (min-width: 576px) {
+    :root {
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+      --mainGridC: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px) {
+    :root {
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root {
+    }
+}
+
+/* ----------------------------------------- LOGIC FOLD/ ----------------------------------------- */
+
+
+
+
+
+/*CLASES GENERALES*/
+
+main {
+  grid-column: var(--mainCol);
+  display: grid;
+  grid-template-columns: var(--mainGridC);
+  background: var(--color5);
+}
+
+h4 {
+  font-size: var(--size5);
+  letter-spacing: 2px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.noticias figcaption p {
+  font-size: var(--size8);
+  /* letter-spacing: 1px; */
+  line-height: 1.9em;
+  padding:  0 10px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+/*CSS ESPECIFICO*/
+
+
+
+.noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: auto;
+}
+
+.noticias li {
+  overflow: hidden;
+  margin-bottom: auto;
+  margin-bottom: 30px;
+}

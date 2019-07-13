@@ -1,0 +1,522 @@
+#navBar li:nth-child(5) a{border:2px solid var(--color1);border-radius:15px;}
+
+:root {
+  --empresaPortadaGridC: 1fr;
+  --empresaPortadaHeight: 900px;
+  --empresaPortadaGridR: auto 1fr;
+
+  --empresaPortadaImgGridR: 2/3;
+  --empresaPortadaFigcaptionGridR: 1/2;
+
+  --empresaPortadah3Margin:  20px 0;
+
+  --empresaValoresLiGridC: span 3;
+
+  --empresaValoresItemsMarginT: 20px;
+  --empresaValoresItemsDisplay: flex;
+
+
+  --empresaValoresPPadding: 0 30px;
+  --empresaValoresFigcaptionMarginLeft: 20px;
+
+  --empresaArticleGridC: 1fr;
+
+  --empresaArticlePadding: 30px 60px;
+
+  --empresaOfertaHeight: 600px;
+
+  --empresaOfertaTitleMarginB: -60px;
+
+  --empresaOfertaLiGridC: span 3;
+
+  --empresaOfertaFigureFlexDirection: row;
+
+  --empresaCompromisoGridC: 1fr 1fr;
+
+  --empresCompromisoH3Width: 1/3;
+
+  --empresaCompromisoHeight: 1200px;
+
+  --empresaEstructuraGridC: 1fr;
+
+  --empresaEstructuraTitleGridC: 1/2;
+
+  --empresaHistoriaDesktopDisplay: none!important;
+
+  --empresaHistoriaMobileDisplay: grid;
+
+  --empresaDescargaGridC: 1fr;
+  --empresaDescargaGridR: 50vh 50vh;
+
+  --empresaDescargaFigcaptionGridR: 1/2;
+  --empresaDescargaImgGridR: 2/3;
+
+  --empresaDescargaFigcaptionGridC: 1/2;
+  --empresaDescargaImgGridC: 1/2;
+
+
+  --empresaValoresHeight: 950px;
+
+  --empresaValoresFigureMarginBottom: 20px;
+
+  --empresArticleHeight: 700px;
+
+
+
+
+
+
+
+}
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (min-width: 576px) {
+    :root {
+
+      --empresArticleHeight: 600px;
+
+
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+      --empresaPortadaGridC: 1fr 1fr;
+      --empresaPortadaGridR: ;
+
+      --empresaPortadaImgGridR: ;
+      --empresaPortadaFigcaptionGridR: ;
+
+      --empresaValoresLiGridC: span 1;
+      --empresaValoresItemsMarginT: ;
+      --empresaValoresItemsDisplay: block;
+      --empresaValoresPPadding: 0 10px;
+      --empresaValoresFigcaptionMarginLeft:  ;
+
+      --empresaArticleGridC: 4fr 6fr;
+
+      --empresaArticlePadding: 30px 90px;
+
+      --empresaOfertaLiGridC: span 1;
+
+      --empresaOfertaFigureFlexDirection: column;
+
+      --empresaOfertaImgMargin: auto;
+
+      --empresaEstructuraGridC: 1fr 1fr;
+      --empresaEstructuraTitleGridC: 1/3;
+
+      --empresaHistoriaDesktopDisplay: grid!important;
+
+      --empresaHistoriaMobileDisplay: none;
+
+      --empresaDescargaGridC: 6fr 4fr;
+      --empresaDescargaGridR: 100vh;
+
+      --empresaDescargaImgGridR: 1/2;
+      --empresaDescargaFigcaptionGridR: 1/2;
+
+      --empresaDescargaFigcaptionGridC: 2/3;
+      --empresaDescargaImgGridC: 1/2;
+
+
+      --empresaValoresHeight: 500px;
+
+      --empresArticleHeight: 500px;
+
+      --empresaOfertaHeight: 400px;
+
+
+
+    }
+}
+@media screen and (min-width: 992px) {
+    :root {
+      --empresaCompromisoGridC: repeat(5, 1fr);
+      --empresCompromisoH3Width: 1/6;
+      --empresaCompromisoHeight: 600px;
+
+
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root {
+      --empresaPortadaHeight: 1050px;
+
+    }
+}
+
+
+main {
+  grid-column: var(--mainCol);
+  display: grid;
+}
+
+
+/* PORTADA */
+#empresaPortada {
+  display: grid;
+  grid-template-columns: var(--empresaPortadaGridC);
+  grid-template-rows: var(--empresaPortadaGridR);
+  height: var(--empresaPortadaHeight);
+}
+
+#empresaPortada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-row: var(--empresaPortadaImgGridR);
+}
+#empresaPortada figcaption {
+  height: 100%;
+  width: 100%;
+  background: var(--color5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: var(--empresaPortadaFigcaptionGridR);
+}
+#empresaPortada figcaption h3 {
+  font-size: var(--size3);
+  margin: var(--empresaPortadah3Margin);
+}
+#empresaPortada figcaption p {
+  padding: 10% 20%;
+  font-size: var(--size7);
+  line-height: 1.7em;
+}
+
+
+
+
+:root {
+    /*VARIABLES DE CAMBIO VISUAL RELACIONADO A AL ANCHO DE LA PANTALLA*/
+    --titleUlSize: 170;
+}
+/* VALORES */
+#empresaValores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  padding: 20px;
+  height: var(--empresaValoresHeight);
+  background: var(--color4);
+}
+
+#empresaValores li {
+  grid-column: var(--empresaValoresLiGridC);
+}
+
+#empresaValores li figure {
+  display: var(--empresaValoresItemsDisplay);
+  margin-bottom: var(--empresaValoresItemsMarginT);
+}
+
+#empresaValores figure {
+  margin-bottom: var(--empresaValoresFigureMarginBottom);
+}
+
+#empresaValores figcaption {
+  margin-left: var(--empresaValoresFigcaptionMarginLeft);
+
+}
+
+#empresaValores h3 {
+  margin-bottom: -30px;
+}
+
+
+ul h3 {
+  grid-column: 1/4;
+  font-size: var(--size3);
+  line-height: calc(var(--titleUlSize) * 1px);
+}
+ul img {
+  width: 100px;
+  height: 100%;
+  min-height: 100px;
+}
+ul h5 {
+  font-size:var(--size5);
+  margin: 10px 0;
+}
+ul p {
+  font-size: var(--size8);
+
+}
+
+ul p a {
+  font-size: var(--size8);
+  word-break: break-all;
+}
+
+
+
+/* ARTICLE */
+#empresaArticle {
+  display: grid;
+  grid-template-columns: var(--empresaArticleGridC);
+  background: var(--color3);
+  height: var(--empresArticleHeight);
+}
+#empresaArticle div {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: var(--size7);
+  padding: var(--empresaArticlePadding);
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+#empresaArticle h4 {
+  font-size: var(--size3);
+  margin-bottom: 30px;
+}
+
+#empresaArticle p {
+}
+
+#empresaArticle div:nth-child(2) {background: var(--color2);}
+
+
+
+/* OFERTA */
+#empresaOferta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12.5%;
+  padding: 0 10%;
+  height: var(--empresaOfertaHeight);
+  background: var(--color6);
+}
+
+#empresaOferta li {
+  grid-column: var(--empresaOfertaLiGridC);
+
+}
+
+#empresaOferta li figure {
+  display: flex;
+  flex-direction: var(--empresaOfertaFigureFlexDirection);
+  padding: var(--empresaOfertaFigurePadding);
+
+}
+
+#empresaOferta li figure img {
+  margin: var(--empresaOfertaImgMargin);
+}
+
+#empresaOferta li figure figcaption {
+  margin: auto;
+}
+
+#empresaOferta li figure figcaption p {
+
+}
+
+
+#empresaOferta h3 {
+  grid-column: 1/4;
+  margin-bottom: var(--empresaOfertaTitleMarginB);
+}
+
+
+/* DIVISION */
+#empresaEdificio {
+  width: 100%;
+  max-width: 100%;
+}
+#empresaEdificio img {
+  width: 100%;
+  max-width:100%;
+  object-fit: scale-down;
+}
+
+
+
+/* COMPROMISO */
+
+#empresaCompromiso {
+  display: grid;
+  grid-template-columns: var(--empresaCompromisoGridC);
+  padding: 0 10%;
+  background: var(--color4);
+  height: var(--empresaCompromisoHeight);
+}
+
+#empresaCompromiso h3 {
+  grid-column: var(--empresCompromisoH3Width);
+  font-size: var(--size3);
+  margin-bottom: -100px;
+}
+
+#empresaCompromiso h5 {
+  font-size: var(--size6);
+}
+
+#empresaCompromiso p {
+  font-size: var(--size8);
+  word-break: break-word;
+  padding: 0 5px;
+
+}
+
+
+#empresaCompromiso img {
+  width: 100px;
+}
+
+#empresaCompromiso li {
+  grid-column: span 1;
+}
+
+
+
+/* DIVISION 2 */
+#empresaMapa {
+  background: var(--color6);
+  padding: 100px 10%;
+  padding-bottom: 0;
+}
+#empresaMapa img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* ESTRUCTURA */
+#empresaEstructura {
+  display: grid;
+  grid-template-columns: var(--empresaEstructuraGridC);
+  padding: 0 10%;
+  background: var(--color6);
+}
+#empresaEstructura h3 {
+  grid-column: var(--empresaEstructuraTitleGridC);
+}
+
+#empresaEstructura p {
+  padding: 0px 20px 20px 20px;
+}
+
+
+/* HISTORIA */
+#empresaHistoria {
+  display: var(--empresaHistoriaDesktopDisplay);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: calc(var(--titleUlSize) * 1px) auto auto 200px;
+  padding: 0 10%;
+  background: var(--color4)
+}
+#empresaHistoria li {
+  grid-column: span 2;
+  text-align: left;
+  letter-spacing: 1px;
+}
+#empresaHistoria li:nth-child(3) {grid-column: 1 / span 2;grid-row: 4;}
+#empresaHistoria li:nth-child(4) {grid-column: 2 / span 2;grid-row: 2;}
+#empresaHistoria li:nth-child(5) {grid-column: 3 / span 2;grid-row: 4;}
+#empresaHistoria li:nth-child(6) {grid-column: 4 / span 2;grid-row: 2;}
+#empresaHistoria li:nth-child(7) {grid-column: 5 / span 2;grid-row: 4;}
+#empresaHistoria li:nth-child(8) {grid-column: 6 / span 2;grid-row: 2;}
+#empresaHistoria li:nth-child(9) {grid-column: 7 / span 2;grid-row: 4;}
+#empresaHistoria img {
+  /* grid-area: i; */
+  grid-column: span 8;
+  width: 100%;
+  max-width:100%;
+  height: auto;
+}
+#empresaHistoria h3 {
+  grid-column: span 8;
+  font-size: var(--size3);
+  line-height: calc(var(--titleUlSize) * 1px);
+}
+#empresaHistoria h6 {
+  font-size:var(--size7);
+  margin-bottom: 10px;
+}
+
+
+
+/*EMPRESA HISTORIA MOVIL*/
+
+
+#empresaHistoriaMobile {
+  display: var(--empresaHistoriaMobileDisplay);
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10%;
+  margin-bottom: 50px;
+}
+
+#empresaHistoriaMobile h3 {
+  grid-column: 1/3;
+  font-size: var(--size4);
+  margin: 20px 0 80px 0;
+}
+
+#empresaHistoriaMobile img {
+  grid-column: 1/2;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+
+
+#empresaHistoriaMobile p {
+  grid-column: 2/3;
+  margin: auto;
+  margin-top: -30px;
+  text-align: left;
+  font-size: calc(2.5vw);
+  padding: 0 20px;
+}
+
+
+
+
+/* DESCARGA */
+#empresaDescarga {
+  display: grid;
+  grid-template-columns: var(--empresaDescargaGridC);
+  grid-template-rows: var(--empresaDescargaGridR);
+  height: 100vh;
+  min-height: 350px;
+}
+
+#empresaDescarga img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-row: var(--empresaDescargaImgGridR);
+  grid-column: var(--empresaDescargaImgGridC);
+}
+
+#empresaDescarga figcaption {
+  width: 100%;
+  height: 100%;
+  background: var(--color2);
+  grid-row: var(--empresaDescargaFigcaptionGridR);
+  grid-column: var(--empresaDescargaFigcaptionGridC);
+}
+
+
+#empresaDescarga a {width: 100%;height: 100%; display:flex; flex-direction: column;}
+#empresaDescarga a img {width: 50px;height: auto;margin: auto;margin-top:10px;}
+#empresaDescarga p {
+  margin: auto;
+  margin-bottom: 0;
+  font-size: var(--size4);
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.tinyLetter {
+  font-size: 12px!important;
+}

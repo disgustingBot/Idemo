@@ -1,0 +1,760 @@
+
+:root {
+    /*VARIABLES DE PERSONALIZACION DE PAGINA*/
+--emisoresIDRMIconRight: 10%;
+--distribuidorIconoRight: 10px;
+--distribuidorIconoTop: 15px;
+
+--titleHeight: 170px;
+--titleHeight2: 130px;
+
+
+--distribuidorIconoSize: 15%;
+
+--titleContainerMargin: 0 -5.5%;
+
+--gridPadding: 0 5%;
+
+--productRow1GridC: span 4;
+--productRow2GridC: span 2;
+--productRow3GridC: 1fr;
+--span8span4: span 8;
+--span4span2: span 4;
+
+--icon5GC: 1/5;
+
+
+
+--motionWidth: auto;
+--motionHeight: 50%;
+
+
+--hirschmannHeight: 80%;
+--hirschmannWidth: auto;
+
+
+--omediHeigh: auto;
+
+--modulosIRDMIconRight: 10%;
+--modulosIRDMIconWidth: 20px;
+
+--sensores2IDRMIconRight: 20%;
+--sensores2IDRMIconTop: 5px;
+
+
+--Row8Width: -30px;
+--productRow8GridR: 1fr 200px;
+
+--auraHeight: auto;
+--auraWidth: 120%;
+
+--motionHeight: auto;
+--motionWidth: 40%;
+
+
+
+
+
+
+
+}
+/* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+@media screen and (min-width: 576px) {
+    :root {
+
+      --titleHeight: 200px;
+      --titleHeight2: 130px;
+
+
+
+      --emisoresIDRMIconRight: 15%;
+
+      --distribuidorIconoTop: 10px;
+
+
+      --omediHeigh: auto;
+
+
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+
+      --titleHeight: 250px;
+      --titleHeight2: 200px;
+
+
+      --productRow3GridC: repeat(3, 1fr);
+      --gridPadding: 0 10%;
+
+      --titleContainerMargin: 0 -12.5%;
+
+      --span8span4: span 4;
+      --span4span2: span 2;
+
+      --emisoresIDRMIconRight: 7%;
+
+      --distribuidorIconoRight: 30px;
+      --distribuidorIconoTop: 10px;
+      --distribuidorIconoSize: 13%;
+
+      --icon5GC: 2/4;
+
+      --hirschmannHeight: 100%;
+      --hirschmannWidth: auto;
+
+
+      --omediHeigh: 390px;
+
+      --modulosIRDMIconRight: 10%;
+      --modulosIRDMIconWidth: 10px;
+
+      --sensores2IDRMIconRight: 17%;
+      --sensores2IDRMIconTop: 20px;
+
+
+    }
+}
+@media screen and (min-width: 992px) {
+    :root {
+
+      --titleHeight: 250px;
+      --titleHeight2: 250px;
+
+      --distribuidorIconoTop: 10px;
+      --distribuidorIconoSize: 15%;
+      --emisoresIDRMIconRight: 5%;
+
+
+      --modulosIRDMIconRight: 8%;
+      --modulosIRDMIconWidth: 5px;
+
+      --Row8Width: -25px;
+
+
+
+
+      --Row8Width: -40px;
+      --productRow8GridR: 1fr 200px;
+
+      --auraHeight: 400px;
+      --auraWidth: auto;
+
+      --motionHeight: 400px;
+      --motionWidth: auto;
+
+
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    :root {
+
+      --distribuidorIconoTop: 10px;
+      --distribuidorIconoSize: 15%;
+
+      --titleHeight: 300px;
+      --titleHeight2: 300px;
+
+
+      --modulosIRDMIconRight: 10%;
+      --modulosIRDMIconWidth: 5px;
+
+      --sensores2IDRMIconRight: 20%;
+      --sensores2IDRMIconTop: 10px;
+    }
+}
+
+/* ----------------------------------------- LOGIC FOLD/ ----------------------------------------- */
+
+
+
+#navBar li:nth-child(2) a{border:2px solid var(--color1);border-radius:15px;}
+
+/*CLASES GENERALES*/
+
+.title {
+  font-size: var(--size2);
+  margin: auto;
+}
+
+.subtitle {
+  font-size: var(--size5);
+  font-weight: 900;
+  padding: 0 15%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.productP1 {
+  /* font-size: 2.3em; */
+  font-size: var(--size4);
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+
+.productP2 {
+  /* font-size: 1.1em; */
+  font-size: var(--size6);
+  letter-spacing: 1px;
+  font-weight: 900;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.productP3 {
+  /* font-size: 0.9em; */
+  font-size: var(--size8);
+  font-weight: 100;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.productStrong {
+  font-weight: 900;
+}
+
+figure {
+  display: grid;
+  margin-bottom: var(--size2);
+}
+
+figure img {
+  margin: auto;
+  margin-bottom: 0;
+}
+
+figure figcaption {
+  margin: auto;
+  margin-top: 10px;
+}
+
+/*ABOVE THE FOLD*/
+
+
+main {
+  width: 100%;
+  box-sizing: border-box;
+  grid-column: var(--mainCol);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.aboveTheFold {
+  position: relative;
+  width: 100%;
+  height: auto;
+  grid-column:1/11;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: var(--color4);
+}
+
+.emisoresTxt {
+  grid-column: 1/11;
+  grid-row: 1/2;
+  height: var(--titleHeight);
+  margin: auto;
+}
+
+
+#distribuidorIcono {
+  position: absolute;
+  width: var(--distribuidorIconoSize);
+  right: var(--distribuidorIconoRight);
+  top: var(--distribuidorIconoTop);
+  max-width: 160px;
+  margin: auto;
+}
+
+
+
+/*EMISORES*/
+
+.emisoresProducts {
+  position: relative;
+  grid-column: 1/11;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: var(--gridPadding);
+  grid-column-gap: 10px;
+  background-color: var(--color6);
+}
+
+
+#emisoresIDRMIcon {
+  position: absolute;
+  width: 10%;
+  bottom: 0;
+  right: var(--emisoresIDRMIconRight);
+  z-index: 100;
+}
+
+/*PRODUCT ROW 1*/
+
+.productRow1 {
+  grid-column: var(--span4span2);
+  margin-top: -40px;
+  grid-template-rows: auto 200px;
+}
+
+.productRow1 img {
+  /*height: 380px;*/
+  object-fit: contain;
+  height: auto;
+  max-height: 380px;
+  width: 100%;
+}
+
+/*PRODUCT ROW 2*/
+
+.productRow2 {
+    grid-template-rows: auto 200px;
+    grid-column: var(--span4span2);
+
+}
+
+
+#fitBlanco img {
+  object-fit: contain;
+  height: auto;
+  max-height: 380px;
+  width: 100%;
+
+}
+
+
+#fitNegro img {
+  object-fit: contain;
+  height: auto;
+  max-height: 380px;
+  width: 100%;
+}
+
+#fitPared {
+  grid-column: var(--span8span4);
+}
+
+#fitPared img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: auto;
+}
+
+.productRow3 {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.productRow3 figcaption {
+  display: grid;
+  grid-template-columns: var(--productRow3GridC);
+}
+
+/*PRODUCT ROW 3*/
+
+
+#jazzImg {
+  object-fit: contain;
+  height: auto;
+  width: 100%;
+}
+
+#jazz5 {
+  margin: auto;
+  margin-top: 0;
+  padding:0 10px;
+}
+
+#jazz2 {
+  margin: auto;
+  margin-top: 0;
+  padding:0 10px;
+}
+
+#jazz1 {
+  margin: auto;
+  margin-top: 0;
+  padding:0 10px;
+}
+
+/*PRODUCT ROW 4*/
+
+
+.productRow4 {
+  grid-template-rows: 190px auto;
+}
+
+#fitMiniUSB figcaption {
+  margin-left: 0px;
+}
+
+.productRow4 figcaption {
+  margin-top: 10px;
+}
+
+#fitMiniUSB {
+  grid-column: 2/6;
+}
+
+
+/*parece un IPod*/
+
+#fitMiniUSB img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+#pocket {
+  grid-column: 6/8;
+}
+
+#pocket img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+/*SECTION 2 - RECEPTORES*/
+
+.receptoresProducts {
+  position: relative;
+  grid-column: 1/11;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: var(--gridPadding);
+  padding-bottom: 130px;
+  background-color: var(--color6);
+}
+
+
+.receptoresTxt {
+  grid-column: 1/9;
+  display: grid;
+  height: var(--titleHeight);
+  margin: var(--titleContainerMargin);
+  background-color:var(--color4);
+  grid-template-rows: 1fr 1fr;
+}
+
+#receptoresIDRMIcon {
+  position: absolute;
+  right: 20%;
+  top: 20px;
+  width: 10%;
+}
+
+#receptoresTitle {
+  margin-bottom:0px;
+}
+
+#receptoresP {
+  margin-top: 0px;
+}
+
+/*SECTION 2 - RECEPTORES PRODUCTOS*/
+
+
+/*PRODUCT ROW 5*/
+
+.productRow5 {
+  grid-template-rows: 390px auto;
+  margin-top:-60px;
+  grid-column: span 4;
+}
+
+.productRow5 figcaption {
+  padding: 0 7px;
+}
+
+
+#omedi img {
+  object-fit: contain;
+  height: var(--omediHeigh);
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+
+
+#hirschmann img {
+  object-fit: contain;
+  height: var(--hirschmannHeight);
+  width: var(--hirschmannWidth);
+}
+
+
+
+.productRow6 {
+  grid-column: var(--span4span2);
+  grid-template-rows: 300px auto;
+}
+
+.productRow6 figcaption {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+
+
+#receptorMini img {
+  object-fit: contain;
+  height: 100%;
+  width: 80%;
+}
+
+
+#receptorEuropeo img {
+  object-fit: contain;
+  width: 80%;
+}
+
+
+
+#moduloBus img {
+  object-fit: contain;
+  width: 80%;
+}
+
+
+
+#receptorParking img {
+  object-fit: contain;
+  height: 100%;
+  width: 80%;
+}
+
+#ReceptoresArrowIcon {
+  height: 55px;
+  width: auto;
+  grid-column: 5/7;
+  margin: auto;
+  margin-top: -40px;
+}
+
+
+/*SECTION 3 - MODULOS IDEMAX */
+
+
+.modulosIdemax {
+  position: relative;
+  grid-column: 1/11;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0 10%;
+  background-color: var(--color6);
+  padding-bottom: 180px;
+}
+
+.modulosIdemaxTxt {
+  margin: 0 -12.5%;
+  grid-column: 1/9;
+  display: grid;
+  height: var(--titleHeight);
+  background-color:var(--color4);
+  grid-template-rows: 1fr 1fr;
+}
+
+#modulosIRDMIcon {
+  position: absolute;
+  right: var(--modulosIRDMIconRight);
+  top: var(--modulosIRDMIconWidth);
+  width: 10%;
+}
+
+#modulosTitle {
+  margin-top: 30px;
+}
+
+.versionesModulosTxt {
+  grid-column: 1/9;
+  background-color: var(--color6);
+}
+
+#versionesModulosTitle {
+  font-size: var(--size3);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#versionesModulosP {
+  font-size: 1em;
+  font-weight: 100;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+
+.versionesIcons {
+  grid-column: var(--span4span2);
+  grid-template-rows: 105px auto;
+}
+
+.versionesIcons figcaption {
+  margin-top: 10px;
+}
+
+
+#versionesIcon1 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+#versionesIcon2 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+
+
+#versionesIcon3 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+
+
+#versionesIcon4 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+#versionesIcon5 {
+  grid-column: var(--icon5GC)
+}
+
+#versionesIcon5 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+
+#versionesIcon6 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+
+
+#versionesIcon7 img {
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+}
+
+/*SECTION 4 - POSIBILIDADES*/
+.posibilidades {
+
+  grid-column: 1/9;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background-color: var(--color6);
+}
+
+#posibilidadesTitle {
+  grid-column: 1/9;
+  font-size: var(--size2);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.posibilidades p {
+  font-size: var(--size8);
+  font-weight: 100;
+  margin-bottom: 30px;
+  padding: 0 7px;
+  grid-column: var(--span4span2);
+}
+
+
+
+
+
+.ejemploInstalacion {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: var(--color6);
+}
+
+#instalacionTitle {
+  font-size: 3.7em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+#ejemploInstalacionImg {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
+/*SECTION 5 - SENSORES*/
+
+.sensores {
+  position: relative;
+  grid-column:1/11;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: var(--color6);
+}
+
+#sensoresTxt {
+  grid-column: 1/11;
+  background-color: var(--color4);
+  height: var(--titleHeight2);
+}
+
+#sensoresTitle {
+  letter-spacing: 2px;
+}
+
+#sensores2IDRMIcon {
+  position: absolute;
+  right: var(--sensores2IDRMIconRight);
+  top: var(--sensores2IDRMIconTop);
+  width: 10%;
+}
+
+.productRow8 {
+  grid-template-rows: var(--productRow8GridR);
+  margin-top: var(--Row8Width);
+}
+
+.productRow8 figcaption {
+  margin-top: 10px;
+}
+
+#aura {
+  grid-column: 2/6;
+}
+
+
+#aura img {
+  object-fit: contain;
+  height: var(--auraHeight);
+  width: var(--auraWidth);
+}
+
+#motion {
+  grid-column: 6/10;
+}
+
+#motion img {
+  object-fit: contain;
+  height: var(--motionHeight);
+  width: var(--motionWidth);
+}
