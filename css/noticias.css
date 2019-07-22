@@ -3,23 +3,45 @@
 
 :root {
   --mainGridC: 1fr;
+  --span2Span1: span 1;
+  --mainGridCGridGap:;
+
+  --h1GridC: 1/2;
+
+  --ThumbnailRow: 200px auto;
 }
 /* ------------------------------------------- MEDIA QUERIES ------------------------------------------- */
 @media screen and (min-width: 576px) {
     :root {
+      --ThumbnailRow: 300px auto;
     }
 }
 @media screen and (min-width: 768px) {
     :root {
       --mainGridC: 1fr 1fr;
+      --span2Span1: 1fr 1fr;
+
+      --mainGridCGridGap: 20px;
+
+      --h1GridC: 1/3;
+      --ThumbnailRow: 300px auto;
+
+
+
+
     }
 }
 @media screen and (min-width: 992px) {
     :root {
+
+      --ThumbnailRow: 350px auto;
+
     }
 }
 @media screen and (min-width: 1200px) {
     :root {
+
+      --ThumbnailRow: 400px auto;
     }
 }
 
@@ -35,13 +57,15 @@ main {
   grid-column: var(--mainCol);
   display: grid;
   grid-template-columns: var(--mainGridC);
-  background: var(--color5);
+  grid-gap: var(--mainGridCGridGap);
+  background: var(--color4);
+  padding: 0 10%;
 }
 
 h4 {
   font-size: var(--size5);
   letter-spacing: 2px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 10px;
 }
 
@@ -52,27 +76,48 @@ h4 {
   padding:  0 10px;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-}
-
 
 
 /*CSS ESPECIFICO*/
 
-
-
-.noticias {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: auto;
+h1 {
+  margin-top: 40px;
+  grid-column: var(--h1GridC);
 }
 
-.noticias li {
-  overflow: hidden;
-  margin-bottom: auto;
-  margin-bottom: 30px;
+h2 {
+  grid-column: var(--h1GridC);
+}
+
+.noticiaThumbnail {
+  margin: 40px 0;
+  display: grid;
+  grid-template-rows: var(--ThumbnailRow);
+  grid-column: var(--span2Span1);
+  border-radius: 4px;
+  overflow: hidden!important;
+  background-color: #ffffff;
+}
+
+.noticiaThumbnail img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+.noticiaThumbnail figcaption {
+  padding: 0 5%;
+}
+
+.noticiaThumbnail p {
+  margin-bottom: 10px;
+}
+
+.noticiaThumbnail button {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 10px!important;
 }

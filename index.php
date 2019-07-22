@@ -2,26 +2,26 @@
 <link rel="stylesheet" type="text/css" href="css/index.css">
   <main>
     <section id="homeForms">
-      <form class="" action="index.html" method="post">
+      <form class="" action="sendMail.php" method="post">
         <h3>soy empresa y<br>busco distribuidor</h3>
-        <input type="text" name="" value="" placeholder="empresa o profesional">
-        <input type="text" name="" value="" placeholder="persona de contacto">
-        <input type="text" name="" value="" placeholder="e-mail">
-        <input type="text" name="" value="" placeholder="teléfono">
-        <input type="text" name="" value="" placeholder="país">
-        <input type="text" name="" value="" placeholder="provincia">
-        <input type="text" name="" value="" placeholder="población">
-        <button type="button" name="button">solicitar distribuidor</button>
+        <input type="text" name="a1" value="" placeholder="empresa o profesional">
+        <input type="text" name="a2" value="" placeholder="persona de contacto">
+        <input type="text" name="a3" value="" placeholder="e-mail">
+        <input type="text" name="a4" value="" placeholder="teléfono">
+        <input type="text" name="a5" value="" placeholder="país">
+        <input type="text" name="a6" value="" placeholder="provincia">
+        <input type="text" name="a7" value="" placeholder="población">
+        <button type="submit" name="button">solicitar distribuidor</button>
       </form>
-      <form class="" action="index.html" method="post">
+      <form class="" action="sendMail.php" method="post">
         <h3>soy particular y<br>busco instalador</h3>
-        <input type="text" name="" value="" placeholder="nombre">
-        <input type="text" name="" value="" placeholder="e-mail">
-        <input type="text" name="" value="" placeholder="teléfono">
-        <input type="text" name="" value="" placeholder="provincia">
-        <input type="text" name="" value="" placeholder="población">
-        <input type="text" name="" value="" placeholder="¿que desea instalar?">
-        <button type="button" name="button">solicitar instalador</button>
+        <input type="text" name="a1" value="" placeholder="nombre">
+        <input type="text" name="a2" value="" placeholder="e-mail">
+        <input type="text" name="a3" value="" placeholder="teléfono">
+        <input type="text" name="a4" value="" placeholder="provincia">
+        <input type="text" name="a5" value="" placeholder="población">
+        <input type="text" name="a6" value="" placeholder="¿que desea instalar?">
+        <button type="submit" name="button">solicitar instalador</button>
       </form>
       <img id="homeFormAlternate" class="" src="img/Recurso8.png" alt="distribuidor instalador" onclick="altForms()">
       <img id="homeAboveTheFoldImg" src="img/PORTADA_CATALOGO_IDEMO_2015.jpg" alt="mujer con control remoto">
