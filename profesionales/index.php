@@ -12,15 +12,15 @@
     <h2>nuestra red de distribuidores está siempre disponible para solventar cualquier necesidad sobre nuestros productos.</h2>
   </div>
 
-  <form id="profesionalesForm1" action="index.html" method="post">
-    <input type="text" name="" value="" placeholder="empresa o profesional">
-    <input type="text" name="" value="" placeholder="persona de contacto">
-    <input type="text" name="" value="" placeholder="e-mail">
-    <input type="text" name="" value="" placeholder="teléfono">
-    <input type="text" name="" value="" placeholder="país">
-    <input type="text" name="" value="" placeholder="provincia">
-    <input type="text" name="" value="" placeholder="población">
-    <button type="button" name="button">contactar distribuidor</button>
+  <form id="profesionalesForm1" action="../sendMail.php" method="post">
+    <input type="text" name="a1" value="" placeholder="empresa o profesional">
+    <input type="text" name="a2" value="" placeholder="persona de contacto">
+    <input type="text" name="a3" value="" placeholder="e-mail">
+    <input type="text" name="a4" value="" placeholder="teléfono">
+    <input type="text" name="a5" value="" placeholder="país">
+    <input type="text" name="a6" value="" placeholder="provincia">
+    <input type="text" name="a7" value="" placeholder="población">
+    <button type="submit" name="button">contactar distribuidor</button>
   </form>
 
 
@@ -311,15 +311,15 @@
     <p id="distribuidorP">si quieres hacerte distribuidor de nuestros<br>productos, rellena y envía el siguiente formulario,<br>analizaremos tu zona y nos pondremos en<br>contacto contigo.</p>
   </div>
 
-  <form id="profesionalesForm2" action="index.html" method="post">
-    <input type="text" name="" value="" placeholder="nombre de empresa">
-    <input type="text" name="" value="" placeholder="persona de contacto">
-    <input type="text" name="" value="" placeholder="e-mail">
-    <input type="text" name="" value="" placeholder="teléfono">
-    <input type="text" name="" value="" placeholder="país">
-    <input type="text" name="" value="" placeholder="provincia">
-    <input type="text" name="" value="" placeholder="población">
-    <button type="button" name="button">hacerme distribuidor</button>
+  <form id="profesionalesForm2" action="sendMail.php" method="post">
+    <input type="text" name="a1" value="" placeholder="nombre de empresa">
+    <input type="text" name="a2" value="" placeholder="persona de contacto">
+    <input type="text" name="a3" value="" placeholder="e-mail">
+    <input type="text" name="a4" value="" placeholder="teléfono">
+    <input type="text" name="a5" value="" placeholder="país">
+    <input type="text" name="a6" value="" placeholder="provincia">
+    <input type="text" name="a7" value="" placeholder="población">
+    <button type="submit" name="button">hacerme distribuidor</button>
   </form>
 
 </section>
