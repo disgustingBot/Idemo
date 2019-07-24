@@ -13,18 +13,30 @@ if (isset($_POST['submit'])) {
 		$del = 1;
 	}
 
-	// (ttl, img, fch, cnt, asy) = ('$ttl', '$img', '$fch', '$cnt', '$asy')
-	try {
-		$qry=$conn2->prepare(
-			"UPDATE
-			news
-			SET
-			ttl = '$ttl', img = '$img', fch = '$fch', cnt = '$cnt', asy = '$asy', del = $del
-			WHERE (
-			pky=$pky
-		);");
-		$qry->execute();
-	} catch (PDOException $e) {echo 'Error: '.$e->getMessage()." file: ".$e->getFile()." line: ".$e->getLine(); exit;}
+	$fle = $_FILES['fl'];
+	$fld = '/img/noticias/';
+	$fin = $fld . basename($fle['name']);
 
-	header("Location: ../admin/index.php?editNews=success");
-}
+
+
+
+	if (move_uploaded_file($fle['tmp_name'], $fin)) {
+			echo "El fichero es válido y se subió con éxito.\n";
+
+			try {
+				$qry=$conn2->prepare(
+					"UPDATE
+					news
+					SET
+					ttl = '$ttl', img = '$fin', fch = '$fch', cnt = '$cnt', asy = '$asy', del = $del
+					WHERE (
+					pky=$pky
+				);");
+				$qry->execute();
+			} catch (PDOException $e) {echo 'Error: '.$e->getMessage()." file: ".$e->getFile()." line: ".$e->getLine(); exit;}
+
+			header("Location: ../admin/index.php?editNews=success");
+		}
+	} else {
+			echo "¡Posible ataque de subida de ficheros!\n";
+	}

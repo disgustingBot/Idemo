@@ -61,7 +61,32 @@
         <input type="password" placeholder="pass" name="pwd">
         <button type="submit" name="submit">Entrar!</button>
       </form>
-    <?php } else if ($_SESSION['pky'] == 1){ ?>
+    <?php } else if ($_SESSION['pky'] == 1){
+
+
+            # Fill our vars and run on cli
+      # $ php -f db-connect-test.php
+      $dbname = 'idemomot_news';
+      $dbuser = 'idemomot_Usr2019';
+      $dbpass = 'pVBxBkRp0HPbn8Qz';
+      $dbhost = '76.74.235.160';
+      // $dbname = 'idemomot_wordpress';
+      // $dbuser = 'idemomot_user';
+      // $dbpass = 'FTs6G73Gv2';
+      // $dbhost = 'localhost';
+
+
+
+
+
+
+    $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+
+
+
+
+
+       ?>
       <form action="../inc/logout.inc.php" method="POST" id="logOut">
         <button type="submit" name="submit">Salir</button>
       </form>
@@ -88,23 +113,37 @@
       <list>
         <h2>Noticias viejas</h2>
     <?php include_once '../inc/dbh.inc.php';
-      $qry = "SELECT * FROM news;";
-      $ress = $conn->query($qry);
-      $resp = $ress->fetch_all(MYSQLI_ASSOC);
 
-      for ($i= count($resp) - 1; $i >= 0; $i--) { ?>
-        <!-- echo $resp[$i]["ttl"]; -->
+      $result = $mysqli->query("SELECT * FROM news");
+      while($row=$result->fetch_assoc()){$results_array[]=$row;}
+
+      // Esta version andaba localmente pero no en el servidor de ellos
+      // $qry = "SELECT * FROM news;";
+      // $ress = $conn->query($qry);
+      // $resp = $ress->fetch_all(MYSQLI_ASSOC);
+
+
+      for ($i= count($results_array) - 1; $i >= 0; $i--) { ?>
+        <!-- echo $results_array[$i]["ttl"]; -->
         <form action="../inc/editNews.inc.php" method="POST" class="noticia">
-          <input    name="pky" hidden type="text" value="<?php echo $resp[$i]["pky"]; ?>">
-          <textarea name="ttl" placeholder="Titulo"        id="" cols="30" rows="1" ><?php echo $resp[$i]["ttl"]; ?></textarea>
-          <img src="<?php echo $resp[$i]["img"]; ?>" alt="">
-          <textarea name="img" placeholder="URL de Imagen" id="" cols="30" rows="1" ><?php echo $resp[$i]["img"]; ?></textarea>
-          <textarea name="fch" placeholder="Fecha"         id="" cols="30" rows="1" ><?php echo $resp[$i]["fch"]; ?></textarea>
-          <textarea name="cnt" placeholder="Contenido"     id="" cols="30" rows="10"><?php echo $resp[$i]["cnt"]; ?></textarea>
-          <textarea name="asy" placeholder="Resumen"       id="" cols="30" rows="10"><?php echo $resp[$i]["asy"]; ?></textarea>
+          <input    name="pky" hidden type="text" value="<?php echo $results_array[$i]["pky"]; ?>">
+          <textarea name="ttl" placeholder="Titulo"        id="" cols="30" rows="1" ><?php echo $results_array[$i]["ttl"]; ?></textarea>
+          <img src="<?php echo $results_array[$i]["img"]; ?>" alt="">
+
+
+          <!-- MAX_FILE_SIZE debe preceder al campo de entrada del fichero -->
+          <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+          <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
+          <input name="fl" type="file" />
+
+
+          <!-- <textarea name="img" placeholder="URL de Imagen" id="" cols="30" rows="1" ><?php echo $results_array[$i]["img"]; ?></textarea> -->
+          <textarea name="fch" placeholder="Fecha"         id="" cols="30" rows="1" ><?php echo $results_array[$i]["fch"]; ?></textarea>
+          <textarea name="cnt" placeholder="Contenido"     id="" cols="30" rows="10"><?php echo $results_array[$i]["cnt"]; ?></textarea>
+          <textarea name="asy" placeholder="Resumen"       id="" cols="30" rows="10"><?php echo $results_array[$i]["asy"]; ?></textarea>
           <label for="del">
             <p>Eliminar:</p>
-            <input name="del" placeholder="Titulo" type="checkbox" <?php if($resp[$i]["del"]==1){echo "checked";} ?> style="margin-right:auto;">
+            <input name="del" placeholder="Titulo" type="checkbox" <?php if($results_array[$i]["del"]==1){echo "checked";} ?> style="margin-right:auto;">
           </label>
           <button type="submit" name="submit">Actualizar Cambios</button>
         </form>
