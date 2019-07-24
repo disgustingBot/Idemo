@@ -9,6 +9,8 @@
     $qry = "SELECT * FROM news WHERE pky = $pky;";
     $ress = $conn->query($qry);
     $resp = $ress->fetch_all(MYSQLI_ASSOC);
+
+    
     ?>
 
     <figure id="aboveTheFold">

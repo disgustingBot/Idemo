@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
 
 
-	$fld = '../img/noticias/';
+	$fld = '/img/noticias/';
 	$fin = $fld . basename($fle['name']);
 
 	// move_uploaded_file($_FILES['fl']['tmp_name'], $fichero_subido);

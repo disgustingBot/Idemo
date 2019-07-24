@@ -13,6 +13,7 @@
   </div>
 
   <form id="profesionalesForm1" action="../sendMail.php" method="post">
+    <input type="text" name="frm" value="Pagina profesionales, contactando distribuidor" hidden>
     <input type="text" name="a1" value="" placeholder="empresa o profesional">
     <input type="text" name="a2" value="" placeholder="persona de contacto">
     <input type="text" name="a3" value="" placeholder="e-mail">
@@ -312,6 +313,7 @@
   </div>
 
   <form id="profesionalesForm2" action="sendMail.php" method="post">
+    <input type="text" name="frm" value="Pagina profesionales, solicitando ser distribuidor" hidden>
     <input type="text" name="a1" value="" placeholder="nombre de empresa">
     <input type="text" name="a2" value="" placeholder="persona de contacto">
     <input type="text" name="a3" value="" placeholder="e-mail">

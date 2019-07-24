@@ -4,6 +4,7 @@
     <section id="homeForms">
       <form class="" action="sendMail.php" method="post">
         <h3>soy empresa y<br>busco distribuidor</h3>
+        <input type="text" name="frm" value="Pagina de inicio, solicitando distribuidor" hidden>
         <input type="text" name="a1" value="" placeholder="empresa o profesional">
         <input type="text" name="a2" value="" placeholder="persona de contacto">
         <input type="text" name="a3" value="" placeholder="e-mail">
@@ -15,6 +16,7 @@
       </form>
       <form class="" action="sendMail.php" method="post">
         <h3>soy particular y<br>busco instalador</h3>
+        <input type="text" name="frm" value="Pagina de inicio, solicitando istalador" hidden>
         <input type="text" name="a1" value="" placeholder="nombre">
         <input type="text" name="a2" value="" placeholder="e-mail">
         <input type="text" name="a3" value="" placeholder="teléfono">
