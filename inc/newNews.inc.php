@@ -15,14 +15,16 @@ if (isset($_POST['submit'])) {
 
 
 
-	$fld = '/img/noticias/';
+	$fld = '../img/noticias/';
 	$fin = $fld . basename($fle['name']);
 
 	// move_uploaded_file($_FILES['fl']['tmp_name'], $fichero_subido);
-	var_dump($fin);
+	// var_dump($fin);
 
 	// echo '<pre>';
 	if (move_uploaded_file($fle['tmp_name'], $fin)) {
+			$fin = substr($fin, 2);
+			// var_dump($fin);
 	    echo "El fichero es válido y se subió con éxito.\n";
 			$qry=$conn2->prepare("INSERT INTO news (ttl, img, cnt, fch, asy) VALUES ('$ttl', '$fin', '$cnt', '$fch', '$asy');"); $qry->execute();
 			header("Location: ../admin/index.php?newNews=success");

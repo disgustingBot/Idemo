@@ -23,6 +23,7 @@ $a4 = $_POST['a4'];
 $a5 = $_POST['a5'];
 $a6 = $_POST['a6'];
 if(isset($_POST['a7'])){$a7 = $_POST['a7'];}
+if(isset($_POST['a8'])){$a7 = $_POST['a8'];}
 
 $timestamp = date("Y-m-d H:i:s");
 
@@ -47,8 +48,8 @@ try {
 
   //Recipients
   $mail->setFrom('consultas@idemomotors.com', 'Consultas Idemo');
-  // $mail->addAddress('molinerozadkiel@gmail.com', 'Markus');        // Add a recipient
-  $mail->addAddress('idemo@idemomotors.com', 'Idemo');             // Add a recipient
+  $mail->addAddress('molinerozadkiel@gmail.com', 'Markus');        // Add a recipient
+  // $mail->addAddress('idemo@idemomotors.com', 'Idemo');             // Add a recipient
   // $mail->addAddress($email_address, $first_name);               // Add a recipient
   // $mail->addAddress('ellen@example.com');                       // Name is optional
   $mail->addReplyTo('consultas@idemomotors.com', 'Consultas Idemo');
@@ -71,6 +72,7 @@ try {
     'data5: '.$a5.'<br>'.
     'data6: '.$a6.'<br>'.
     'data7: '.$a7.'<br>'.
+    'data8: '.$a8.'<br>'.
     'fecha y hora: '.$timestamp;
 
   $mail->AltBody =
@@ -82,6 +84,7 @@ try {
     'data5: '.$a5.'<br>'.
     'data6: '.$a6.'<br>'.
     'data7: '.$a7.'<br>'.
+    'data8: '.$a8.'<br>'.
     'fecha y hora: '.$timestamp;
 
   // header( "Location: $thankyou_page" );

@@ -1,0 +1,13 @@
+[24-Jul-2019 12:25:54 UTC] PHP Warning:  move_uploaded_file(/img/noticias/imagen-aleatoria-destacada.png): failed to open stream: No such file or directory in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 12:25:54 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpd6rk4t' to '/img/noticias/imagen-aleatoria-destacada.png' in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 12:54:20 UTC] PHP Warning:  move_uploaded_file(/img/noticias/imagen-aleatoria-destacada.png): failed to open stream: No such file or directory in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 12:54:20 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpK83Agv' to '/img/noticias/imagen-aleatoria-destacada.png' in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 12:55:55 UTC] PHP Warning:  move_uploaded_file(/img/noticias/imagen-aleatoria-destacada.png): failed to open stream: No such file or directory in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 12:55:55 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php4BiEBi' to '/img/noticias/imagen-aleatoria-destacada.png' in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 13:15:52 UTC] PHP Warning:  move_uploaded_file(/img/noticias/myw3schoolsimage.jpg): failed to open stream: No such file or directory in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 13:15:52 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpoNprYA' to '/img/noticias/myw3schoolsimage.jpg' in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 13:16:41 UTC] PHP Warning:  move_uploaded_file(/img/noticias/myw3schoolsimage.jpg): failed to open stream: No such file or directory in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 13:16:41 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpAE5UT7' to '/img/noticias/myw3schoolsimage.jpg' in /home/idemomotors/public_html/inc/newNews.inc.php on line 25
+[24-Jul-2019 13:20:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/idemomotors/public_html/inc/newNews.inc.php:22) in /home/idemomotors/public_html/inc/newNews.inc.php on line 30
+[24-Jul-2019 14:56:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/idemomotors/public_html/inc/newNews.inc.php:28) in /home/idemomotors/public_html/inc/newNews.inc.php on line 30
+[24-Jul-2019 17:32:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/idemomotors/public_html/inc/editNews.inc.php on line 54

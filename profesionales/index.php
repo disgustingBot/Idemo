@@ -21,6 +21,7 @@
     <input type="text" name="a5" value="" placeholder="país">
     <input type="text" name="a6" value="" placeholder="provincia">
     <input type="text" name="a7" value="" placeholder="población">
+    <textarea name="a8" rows="3" cols="80" placeholder="mensaje"></textarea>
     <button type="submit" name="button">contactar distribuidor</button>
   </form>
 
@@ -321,6 +322,7 @@
     <input type="text" name="a5" value="" placeholder="país">
     <input type="text" name="a6" value="" placeholder="provincia">
     <input type="text" name="a7" value="" placeholder="población">
+    <textarea name="a8" rows="3" cols="80" placeholder="mensaje"></textarea>
     <button type="submit" name="button">hacerme distribuidor</button>
   </form>
 
