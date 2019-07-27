@@ -3,8 +3,8 @@
 <link rel="stylesheet" type="text/css" href="../css/noticias.css">
   <main>
 
-    <h1>Noticias Idemo</h1>
-    <h2>Subtitulo noticias idemo (A generar)</h2>
+    <h1>noticias idemo</h1>
+
 
     <?php include_once '../inc/dbh.inc.php';
       // $qry = "SELECT * FROM news;";
