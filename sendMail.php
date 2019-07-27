@@ -23,7 +23,7 @@ $a4 = $_POST['a4'];
 $a5 = $_POST['a5'];
 $a6 = $_POST['a6'];
 if(isset($_POST['a7'])){$a7 = $_POST['a7'];}
-if(isset($_POST['a8'])){$a7 = $_POST['a8'];}
+if(isset($_POST['a8'])){$a8 = $_POST['a8'];}
 
 $timestamp = date("Y-m-d H:i:s");
 
@@ -91,10 +91,12 @@ try {
   // header( "Location: index.php?mail=success" );
   header( "Location: https://www.idemomotors.com/?mail=success" );
   $mail->send();
+  exit;
 } catch (Exception $e) {
   header( "Location: https://www.idemomotors.com/?mail=error" );
   echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     // header( "Location: index.php?mail=error" );
+  exit;
 }
 
 //______________________________________$mail ENVIADO_________________________________________
