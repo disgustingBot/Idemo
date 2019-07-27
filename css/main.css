@@ -176,9 +176,18 @@ input {
   transition: .3s;
   line-height: 16px;
 }
+textarea {
+  border: none;
+  background: var(--color6);
+  border-radius: 12px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  transition: .3s;
+  line-height: 16px;
+}
 :focus  {outline:0}
 input:focus, textarea {outline:none!important; border-bottom: 2px solid var(--color1);}
-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+input::placeholder textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--color1);
   opacity: 1; /* Firefox */
   font-family: Futura;
