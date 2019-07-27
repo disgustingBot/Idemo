@@ -83,11 +83,11 @@ h4 {
 h1 {
   margin-top: 40px;
   grid-column: var(--h1GridC);
+  color: var(--color1);
+  font-size: var(--size2);d
 }
 
-h2 {
-  grid-column: var(--h1GridC);
-}
+
 
 .noticiaThumbnail {
   margin: 40px 0;
@@ -96,7 +96,13 @@ h2 {
   grid-column: var(--span2Span1);
   border-radius: 4px;
   overflow: hidden!important;
-  background-color: #ffffff;
+  background-color: var(--color5);;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.noticiaThumbnail:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .noticiaThumbnail img {
@@ -109,15 +115,26 @@ h2 {
 
 .noticiaThumbnail figcaption {
   padding: 0 5%;
+  color: var(--color1);
 }
 
 .noticiaThumbnail p {
   margin-bottom: 10px;
+  color: var(--color1);
 }
 
-.noticiaThumbnail button {
-  width: 150px;
-  height: 50px;
-  margin: auto;
+.noticiaThumbnail a {
+  font-size: var(--size8);
+  border: 2px solid var(--color1);
+  border-radius: 8px;
+  padding: 5px 7px!important;
+  position: relative;
+  z-index: 0;
+  transition: .3s;
   margin-bottom: 10px!important;
+}
+
+.noticiaThumbnail a:hover {
+  background: var(--color1);
+  color:var(--color5);
 }
