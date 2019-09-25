@@ -91,10 +91,12 @@ try {
   // header( "Location: index.php?mail=success" );
   header( "Location: https://www.idemomotors.com/?mail=success" );
   $mail->send();
+  exit;
 } catch (Exception $e) {
   header( "Location: https://www.idemomotors.com/?mail=error" );
   echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     // header( "Location: index.php?mail=error" );
+  exit;
 }
 
 //______________________________________$mail ENVIADO_________________________________________
