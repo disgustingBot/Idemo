@@ -23,7 +23,7 @@ $a4 = $_POST['a4'];
 $a5 = $_POST['a5'];
 $a6 = $_POST['a6'];
 if(isset($_POST['a7'])){$a7 = $_POST['a7'];}
-if(isset($_POST['a8'])){$a7 = $_POST['a8'];}
+if(isset($_POST['a8'])){$a8 = $_POST['a8'];}
 
 $timestamp = date("Y-m-d H:i:s");
 
@@ -40,16 +40,16 @@ try {
   $mail->SMTPAuth = true;                              // Enable SMTP authentication
   // $mail->Username = 'idemo@idemomotors.com';           // SMTP username
   // $mail->Password = 'Idemomotors25';                   // SMTP password
-  $mail->Username = 'consultas@idemomotors.com';      // SMTP username
-  $mail->Password = 'FIm46YtzX5be';                   // SMTP password
+  $mail->Username = 'consultas@idemomotors.com';       // SMTP username
+  $mail->Password = 'VWOUgrP06ZKmLULqSl5W';            // SMTP password
   $mail->SMTPSecure = 'ssl';                           // Enable TLS encryption, `ssl` also accepted
   $mail->Port = 465;                                   // TCP port to connect to
   $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ));
 
   //Recipients
   $mail->setFrom('consultas@idemomotors.com', 'Consultas Idemo');
-  $mail->addAddress('molinerozadkiel@gmail.com', 'Markus');        // Add a recipient
-  // $mail->addAddress('idemo@idemomotors.com', 'Idemo');             // Add a recipient
+  // $mail->addAddress('molinerozadkiel@gmail.com', 'Markus');        // Add a recipient
+  $mail->addAddress('idemo@idemomotors.com', 'Idemo');             // Add a recipient
   // $mail->addAddress($email_address, $first_name);               // Add a recipient
   // $mail->addAddress('ellen@example.com');                       // Name is optional
   $mail->addReplyTo('consultas@idemomotors.com', 'Consultas Idemo');

@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 		header("Location: ../index.php?login=empty");
 		exit();
 	} else {
-		if ($uid == "idemo" && $pwd == "1234") {
+		if ($uid == "idemo" && $pwd == "VWOUgrP06ZKmLULqSl5W") {
 			// Log in the user here
 			$_SESSION['pky'] = 1;
 			$_SESSION['uid'] = $uid;
