@@ -66,7 +66,7 @@
     <p id="ulMotoresTitle">motores</p>
     <li>
       <p>STAR 35</p>
-      <p><a href="/fichasTecnicas/STAR35_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR35_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/star35_45_instrucciones.pdf"> instrucciones</a></p>
     </li>
 
     <li>
@@ -106,7 +106,7 @@
 
     <li>
       <p>BLU 35</p>
-      <p><a href="/fichasTecnicas/BLU35_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/BLU35_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/blu35_45_instrucciones.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -116,7 +116,7 @@
 
     <li>
       <p>LIMIT 35 RS</p>
-      <p><a href="/fichasTecnicas/LIMIT35RS_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/LIMIT35RS_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/limit35_45_instrucciones.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -131,7 +131,7 @@
 
     <li>
       <p>LIMIT 45 DO</p>
-      <p><a href="/fichasTecnicas/LIMIT45DO_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/LIMIT45DO_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/limit_do_instrucciones.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -184,22 +184,22 @@
     </li>
 
     <li>
-      <p>Receptor MINI 500</p>
-      <p><a href="/fichasTecnicas/MINI500_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="">instrucciones según motor</a></p>
+      <p>MINI 500</p>
+      <p><a href="/fichasTecnicas/MINI500_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="/instrucciones/rec_mini300_500_instrucciones.pdf" download>instrucciones según motor</a></p>
     </li>
 
     <li>
-      <p>Receptor EUROPEO</p>
-      <p><a href="/fichasTecnicas/EUROPEO_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="">instrucciones según motor</a></p>
+      <p>EUROPEO</p>
+      <p><a href="/fichasTecnicas/EUROPEO_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="/instrucciones/rec_europeo_instrucciones-V-3-Domotica.pdf" download>instrucciones según motor</a></p>
     </li>
 
     <li>
-      <p>Receptor OMEDI</p>
+      <p>OMEDI</p>
       <p><a href="/fichasTecnicas/OMEDI_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="">instrucciones según motor</a></p>
     </li>
 
     <li>
-      <p>Receptor PARKING</p>
+      <p>PARKING</p>
       <p><a href="/fichasTecnicas/" download >ficha técnica</a> /<br><a href="">instrucciones según motor</a></p>
     </li>
 
@@ -210,7 +210,7 @@
 
     <li>
       <p>Sensor AURA</p>
-      <p><a href="/fichasTecnicas/AURA_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="">instrucciones según motor</a></p>
+      <p><a href="/fichasTecnicas/AURA_fichatecnica.pdf" download >ficha técnica</a> /<br><a href="/instrucciones/sensor_Aura_viento_sol_ES.pdf" download>instrucciones según motor</a></p>
     </li>
 
     <li>

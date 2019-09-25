@@ -1,5 +1,5 @@
 <?php include "head.php"; ?>
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="/css/index.css">
   <main>
     <section id="homeForms">
       <form class="" action="sendMail.php" method="post">
