@@ -351,3 +351,33 @@ footer {
   width: 50px;
   height: auto;
 }
+
+.cookiesPopup {
+  background: var(--color3);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: var(--cookiesPopupFlexDir);
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border: solid 1px var(--color1);
+  transition: .5s;
+}
+.cookiesPopup a {color: black; font-weight: bolder;}
+.cookiesPopup a:hover {text-decoration: underline;}
+.okCookies { width: 250px!important; margin: var(--okCookiesMargin);}
+
+.cookieContainer {
+  width: 90%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: auto;
+  grid-column: span 10;
+  padding: 30px;
+  text-align: justify;
+}
+.cookieContainer p,h2,h3,h4,h5 {margin: 20px 0;}
+
+.cookieContainer ul {list-style: circle;}
