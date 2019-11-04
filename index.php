@@ -5,24 +5,26 @@
       <form class="" action="sendMail.php" method="post">
         <h3>soy empresa y<br>busco distribuidor</h3>
         <input type="text" name="frm" value="Pagina de inicio, solicitando distribuidor" hidden>
-        <input type="text" name="a1" value="" placeholder="empresa o profesional">
-        <input type="text" name="a2" value="" placeholder="persona de contacto">
-        <input type="text" name="a3" value="" placeholder="e-mail">
-        <input type="text" name="a4" value="" placeholder="teléfono">
-        <input type="text" name="a5" value="" placeholder="país">
-        <input type="text" name="a6" value="" placeholder="provincia">
-        <input type="text" name="a7" value="" placeholder="población">
+        <input type="text" name="a1" value="" placeholder="empresa o profesional" required>
+        <input type="text" name="a2" value="" placeholder="persona de contacto" required>
+        <input type="text" name="a3" value="" placeholder="e-mail" required>
+        <input type="text" name="a4" value="" placeholder="teléfono" required>
+        <input type="text" name="a5" value="" placeholder="país" required>
+        <input type="text" name="a6" value="" placeholder="provincia" required>
+        <input type="text" name="a7" value="" placeholder="población" required>
+        <input type="text" name="a9" value="" placeholder="jeje" hidden>
         <button type="submit" name="button">solicitar distribuidor</button>
       </form>
       <form class="" action="sendMail.php" method="post">
         <h3>soy particular y<br>busco instalador</h3>
         <input type="text" name="frm" value="Pagina de inicio, solicitando istalador" hidden>
-        <input type="text" name="a1" value="" placeholder="nombre">
-        <input type="text" name="a2" value="" placeholder="e-mail">
-        <input type="text" name="a3" value="" placeholder="teléfono">
-        <input type="text" name="a4" value="" placeholder="provincia">
-        <input type="text" name="a5" value="" placeholder="población">
-        <input type="text" name="a6" value="" placeholder="¿que desea instalar?">
+        <input type="text" name="a1" value="" placeholder="nombre" required>
+        <input type="text" name="a2" value="" placeholder="e-mail" required>
+        <input type="text" name="a3" value="" placeholder="teléfono" required>
+        <input type="text" name="a4" value="" placeholder="provincia" required>
+        <input type="text" name="a5" value="" placeholder="población" required>
+        <input type="text" name="a6" value="" placeholder="¿que desea instalar?" required>
+        <input type="text" name="a9" value="" placeholder="jeje" hidden>
         <button type="submit" name="button">solicitar instalador</button>
       </form>
       <img id="homeFormAlternate" class="" src="img/Recurso8.png" alt="distribuidor instalador" onclick="altForms()">
