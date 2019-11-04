@@ -14,14 +14,15 @@
 
   <form id="profesionalesForm1" action="../sendMail.php" method="post">
     <input type="text" name="frm" value="Pagina profesionales, contactando distribuidor" hidden>
-    <input type="text" name="a1" value="" placeholder="empresa o profesional">
-    <input type="text" name="a2" value="" placeholder="persona de contacto">
-    <input type="text" name="a3" value="" placeholder="e-mail">
-    <input type="text" name="a4" value="" placeholder="teléfono">
-    <input type="text" name="a5" value="" placeholder="país">
-    <input type="text" name="a6" value="" placeholder="provincia">
-    <input type="text" name="a7" value="" placeholder="población">
+    <input type="text" name="a1" value="" placeholder="empresa o profesional" required>
+    <input type="text" name="a2" value="" placeholder="persona de contacto" required>
+    <input type="text" name="a3" value="" placeholder="e-mail" required>
+    <input type="text" name="a4" value="" placeholder="teléfono" required>
+    <input type="text" name="a5" value="" placeholder="país" required>
+    <input type="text" name="a6" value="" placeholder="provincia" required>
+    <input type="text" name="a7" value="" placeholder="población" required>
     <textarea name="a8" rows="3" cols="80" placeholder="mensaje"></textarea>
+    <input type="text" name="a9" value="" placeholder="jeje" hidden>
     <button type="submit" name="button">contactar distribuidor</button>
   </form>
 
@@ -315,14 +316,15 @@
 
   <form id="profesionalesForm2" action="sendMail.php" method="post">
     <input type="text" name="frm" value="Pagina profesionales, solicitando ser distribuidor" hidden>
-    <input type="text" name="a1" value="" placeholder="nombre de empresa">
-    <input type="text" name="a2" value="" placeholder="persona de contacto">
-    <input type="text" name="a3" value="" placeholder="e-mail">
-    <input type="text" name="a4" value="" placeholder="teléfono">
-    <input type="text" name="a5" value="" placeholder="país">
-    <input type="text" name="a6" value="" placeholder="provincia">
-    <input type="text" name="a7" value="" placeholder="población">
+    <input type="text" name="a1" value="" placeholder="nombre de empresa" required>
+    <input type="text" name="a2" value="" placeholder="persona de contacto" required>
+    <input type="text" name="a3" value="" placeholder="e-mail" required>
+    <input type="text" name="a4" value="" placeholder="teléfono" required>
+    <input type="text" name="a5" value="" placeholder="país" required>
+    <input type="text" name="a6" value="" placeholder="provincia" required>
+    <input type="text" name="a7" value="" placeholder="población" required>
     <textarea name="a8" rows="3" cols="80" placeholder="mensaje"></textarea>
+    <input type="text" name="a9" value="" placeholder="jeje" hidden>
     <button type="submit" name="button">hacerme distribuidor</button>
   </form>
 
