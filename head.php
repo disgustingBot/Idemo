@@ -234,7 +234,7 @@
 
 
   <div class="cookiesPopup">
-    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio. En cumplimiento del Real Decreto-ley 13/2012, si continúa navegando, consideramos que acepta nuestra <a href="idemomotors.com/cookies" target="_blank" class="cookiesLink">política de privacidad</a>.</p>
+    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio. En cumplimiento del Real Decreto-ley 13/2012, si continúa navegando, consideramos que acepta nuestra <a href="https://idemomotors.com/cookies" target="_blank" class="cookiesLink">política de privacidad</a>.</p>
     <button class="okCookies" onclick="closePopup()">Aceptar términos</button>
   </div>
 
