@@ -38,7 +38,7 @@
     <!-- TODO: colocar hipervinculos correspondientes -->
     <ul id="homeNavgt">
       <li>
-        <a href="para-persianas-enrollables.php">
+        <a href="motores/para-persianas-enrollables">
           <figure>
             <img src="img/Recurso1-100.jpg" alt="">
             <figcaption>
@@ -50,7 +50,7 @@
         </a>
       </li>
       <li>
-        <a href="para-persianas-orientables.php">
+        <a href="motores/para-persianas-orientables">
           <figure>
             <img src="img/Recurso2-100.jpg" alt="">
             <figcaption>
@@ -62,7 +62,7 @@
         </a>
       </li>
       <li>
-        <a href="para-toldos-y-pergolas.php">
+        <a href="motores/para-toldos-y-pergolas">
           <figure>
             <img src="img/Recurso3-100.jpg" alt="">
             <figcaption>
@@ -74,7 +74,7 @@
         </a>
       </li>
       <li>
-        <a href="para-cortinas-enrollables.php">
+        <a href="motores/para-cortinas-enrollables">
           <figure>
             <img src="img/Recurso4-100.jpg" alt="">
             <figcaption>
@@ -86,7 +86,7 @@
         </a>
       </li>
       <li>
-        <a href="para-puertas-enrollables.php">
+        <a href="motores/para-puertas-enrollables">
           <figure>
             <img src="img/Recurso5-100.jpg" alt="">
             <figcaption>
@@ -108,7 +108,7 @@
           hogar capaz de controlar sistemas de
           motorización, iluminación y climatización.
         </h3>
-        <a href="domotica.php">descubre nuestro sistema de domótica</a>
+        <a href="domotica">descubre nuestro sistema de domótica</a>
       </figcaption>
     </figure>
   </main>
