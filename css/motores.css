@@ -74,6 +74,7 @@ h3 {
 }
 #motoresNavgt h3 {
   grid-column: var(--motoresNavgtTitleGC);
+  margin: 0;
 }
 #motoresNavgt li {
   height: 100%;
