@@ -232,6 +232,8 @@
 </head>
 <body>
 
+  <view id="load" class="load"><div class="circle"></div></view>
+
 
   <div class="cookiesPopup">
     <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio. En cumplimiento del Real Decreto-ley 13/2012, si continúa navegando, consideramos que acepta nuestra <a href="https://idemomotors.com/cookies" target="_blank" class="cookiesLink">política de privacidad</a>.</p>

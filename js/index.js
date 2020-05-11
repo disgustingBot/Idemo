@@ -13,6 +13,7 @@ w.onload=()=>{
   if (readCookie('popupClosed')) {
     d.querySelector('.cookiesPopup').style.display="none";
   }
+  d.getElementById("load").style.top="-100vh";
 }
 
 
