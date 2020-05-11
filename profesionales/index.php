@@ -67,42 +67,42 @@
     <p id="ulMotoresTitle">motores</p>
     <li>
       <p>STAR 35</p>
-      <p><a href="/fichasTecnicas/STAR35_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/star35_45_instrucciones.pdf"> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR35_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/star35_45_instrucciones.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 35 RS</p>
-      <p><a href="/fichasTecnicas/STAR35RS_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR35RS_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 45</p>
-      <p><a href="/fichasTecnicas/STAR45_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR45_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 45 R</p>
-      <p><a href="/fichasTecnicas/STAR45R_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR45R_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 45 RS</p>
-      <p><a href="/fichasTecnicas/STAR45RS_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR45RS_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 45 MM</p>
-      <p><a href="/fichasTecnicas/STAR45MM_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR45MM_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 59</p>
-      <p><a href="/fichasTecnicas/STAR59_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR59_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>STAR 59 MM</p>
-      <p><a href="/fichasTecnicas/STAR59MM_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/STAR59MM_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Star_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -112,7 +112,7 @@
 
     <li>
       <p>BLU 45</p>
-      <p><a href="/fichasTecnicas/BLU45_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/BLU45_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Blu_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -137,7 +137,7 @@
 
     <li>
       <p>IDEMAX IDX-PRO 45</p>
-      <p><a href="/fichasTecnicas/IDX-PRO_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/IDX-PRO_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Idx_Pro.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
@@ -296,7 +296,7 @@
   <figure id="descargaCatalogo">
 
     <figcaption id="descargaCatalogoTxt">
-      <a href="/fichasTecnicas/CATA_LOGO_IDEMO_2015_I_trazado-baja.pdf" download>descarga<br>nuestro<br>catálogo</a>
+      <a href="/fichasTecnicas/2020CatalogoIdemoMotors.pdf" download>descarga<br>nuestro<br>catálogo</a>
     </figcaption>
     <img src="/img/RecursoProfesionales3.png" alt="icono flecha indicativa" id="descargasIcon">
   </figure>
