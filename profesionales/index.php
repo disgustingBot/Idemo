@@ -122,12 +122,12 @@
 
     <li>
       <p>LIMIT 45</p>
-      <p><a href="/fichasTecnicas/LIMIT45_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/LIMIT45_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Limit_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
       <p>LIMIT 45 RS</p>
-      <p><a href="/fichasTecnicas/LIMIT45RS_fichatecnica.pdf" download >ficha técnica</a> / <a href=""> instrucciones</a></p>
+      <p><a href="/fichasTecnicas/LIMIT45RS_fichatecnica.pdf" download >ficha técnica</a> / <a href="/instrucciones/Motor_Limit_series_35_45.pdf" download> instrucciones</a></p>
     </li>
 
     <li>
