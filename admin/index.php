@@ -5,6 +5,8 @@
       width: 300px;
       margin: auto;
       margin-top: 200px;
+      position:sticky;
+      top:200px;
     }
     button {
       width: 150px;
