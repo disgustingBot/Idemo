@@ -25,11 +25,12 @@ if (isset($_POST['submit'])) {
 	if (move_uploaded_file($fle['tmp_name'], $fin)) {
 			$fin = substr($fin, 2);
 			// var_dump($fin);
-	    echo "El fichero es válido y se subió con éxito.\n";
+	    // echo "El fichero es válido y se subió con éxito.\n";
 			$qry=$conn2->prepare("INSERT INTO news (ttl, img, cnt, fch, asy) VALUES ('$ttl', '$fin', '$cnt', '$fch', '$asy');"); $qry->execute();
 			header("Location: ../admin/index.php?newNews=success");
 	} else {
-	    echo "¡Posible ataque de subida de ficheros!\n";
+	    // echo "¡Error al subir la imagen!\n";
+			header("Location: ../admin/index.php?newNews=imageError");
 	}
 
 	// echo 'Más información de depuración:';

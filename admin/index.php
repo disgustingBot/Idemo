@@ -53,8 +53,72 @@
     #logOut button{
       width: 100px;
     }
+
+    .logErrors{
+      background:black;
+      border-radius:0 0 8px 8px;
+      color:white;
+      left:50%;
+      padding:1rem 2rem;
+      padding-right:3rem;
+      position:fixed;
+      top:-6rem;
+      transition:.4s;
+      transform:translateX(-50%);
+      z-index:30;
+    }
+    .logErrors.alt{top:0}
+    .logErrors p{color:inherit;}
+    .logErrors .logFormCloseLine{background:white;}
+    .logErrors .logFormClose {
+      width:20px;
+      height:20px;
+      margin:.3rem;
+    }
+
+    .logFormClose{
+      position: absolute;
+      top:0;
+      right:.5rem;
+      height:30px;
+      width: 30px;
+      background: none;
+      border:none;
+      cursor:pointer;
+    }
+
+    .logFormCloseLine{
+      position: absolute;
+      top:50%;
+      left:0;
+      width:100%;
+      height:2px;
+      background:black;
+      transition:.3s;
+      transform:rotate(45deg);
+    }
+    .logFormCloseLine:first-child{transform:rotate(-45deg);}
+    .logFormClose:hover .logFormCloseLine{background:var(--color1)}
   </style>
   <main>
+
+
+
+      <?php $errores = array('imageError', 'success'); ?>
+      <div id="logErrors" class="logErrors <?php if (in_array($_GET['newNews'], $errores)) { echo 'alt'; } ?>">
+        <?php if ( $_GET['newNews'] == 'imageError' ) { ?>
+          <p>Error al subir imagen</p>
+        <?php } ?>
+        <?php if ( $_GET['newNews'] == 'success' ) { ?>
+          <p>Noticia subida con exito</p>
+        <?php } ?>
+        <button class="logFormClose" type="button" onclick="altClassFromSelector('alt','#logErrors')">
+          <div class="logFormCloseLine"></div>
+          <div class="logFormCloseLine"></div>
+        </button>
+      </div>
+
+
     <?php if (!isset($_SESSION['pky'])) { ?>
       <form action="../inc/login.inc.php" method="POST" id="form">
         <input type="text"     placeholder="user" name="uid">
