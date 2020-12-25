@@ -1,4 +1,7 @@
-<?php include "../../head.php"; ?>
+<?php
+header("Content-Type: text/html;charset=UTF-8");
+include "../../head.php";
+?>
 
 <link rel="stylesheet" type="text/css" href="/css/noticia.css">
 
@@ -7,23 +10,41 @@
 
 
   <?php include "../../inc/dbh.inc.php";
+    $mysqli->query("set names 'utf8'");
+
     $pky = $_GET["pky"];
-    // $qry = "SELECT * FROM news WHERE pky = $pky;";
-    // $ress = $conn->query($qry);
+    $qry = "SELECT * FROM news WHERE pky = $pky;";
+    // $ress = $conn2->query($qry);
     // $results_array = $ress->fetch_all(MYSQLI_ASSOC);
 
 
-          $result = $mysqli->query("SELECT * FROM news WHERE pky = $pky");
-          while($row=$result->fetch_assoc()){$results_array[]=$row;}
+    $gsent = $conn2->prepare($qry);
+    $gsent->execute();
+
+    /* Obtener todas las filas restantes del conjunto de resultados */
+    // print("Obtener todas las filas restantes del conjunto de resultados:\n");
+    $results_array = $gsent->fetchAll();
+			// $save_parent = "INSERT INTO elementparent (ppk, epk) VALUES ($parent_id, $element_id);";
+			// $qry=$conn2->prepare($save_parent); $qry->execute();
+
+
+    // mysql_query("set names 'utf8'");
+    // $result = $mysqli->query("SELECT * FROM news WHERE pky = $pky");
+    // while($row=$result->fetch_assoc()){$results_array[]=$row;}
+
+    // $query = "SELECT * FROM news WHERE pky = $pky";
+    // $ress = $conn->query($qry);
+    // $resp = $ress->fetch_all(MYSQLI_ASSOC);
+    // while($row=$resp){$results_array[]=$row;}
     ?>
 
     <figure id="aboveTheFold">
       <img id="noticiaImg" src="<?php echo $results_array[0]["img"]; ?>" alt="">
       <figcaption id="titleContainer">
-        <h1 id="title"><?php echo $results_array[0]["ttl"]; ?></h1>
+        <h1 id="title"><?php echo utf8_encode ( $results_array[0]["ttl"] ); ?></h1>
       </figcaption>
     </figure>
-    <p id="NoticiaBody"><?php echo $results_array[0]["cnt"]; ?></p>
+    <p id="NoticiaBody"><?php echo utf8_encode ( $results_array[0]["cnt"] ); ?></p>
 
     <h6 id="shareTitle">Compartir</h6>
 

@@ -22,10 +22,10 @@
         <img src="<?php echo $results_array[$i]["img"]; ?>" alt="">
         <figcaption>
           <h4>
-            <?php echo $results_array[$i]["ttl"]; ?>
+            <?php echo utf8_encode ( $results_array[$i]["ttl"] ); ?>
           </h4>
           <p>
-            <?php echo $results_array[$i]["asy"]; ?>
+            <?php echo utf8_encode ( $results_array[$i]["asy"] ); ?>
           </p>
         </figcaption>
         <a class="button" href="noticia/?pky=<?php echo $results_array[$i]["pky"]; ?>" style="padding:1em 2em;margin:auto;">Leer más</a>
