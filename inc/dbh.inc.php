@@ -3,7 +3,8 @@
 $dbname = 'idemomot_news';
 $dbuser = 'idemomot_Usr2019';
 $dbpass = 'pVBxBkRp0HPbn8Qz';
-$dbhost = '76.74.235.160';
+// $dbhost = '76.74.235.160';
+$dbhost = 'localhost';
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
 
@@ -34,3 +35,4 @@ $pdo_dsn='mysql:dbname=idemomot_news;host=localhost';$pdo_user='idemomot_Usr2019
 $conn = mysqli_connect($dbServerName, $dbUserName, $dbPassword, $dbName);
 $conn2 = new PDO($pdo_dsn, $pdo_user, $pdo_password);
 $conn2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn2->setAttribute(PDO::MYSQL_ATTR_INIT_COMMAND, "SET NAMES 'utf8'");
